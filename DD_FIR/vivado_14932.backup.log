@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Sun May 12 16:13:34 2019
+# Process ID: 14932
+# Current directory: C:/Users/user/Desktop/DD_FIR_Lab11/DD_FIR
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5344 C:\Users\user\Desktop\DD_FIR_Lab11\DD_FIR\DD_FIR.xpr
+# Log file: C:/Users/user/Desktop/DD_FIR_Lab11/DD_FIR/vivado.log
+# Journal file: C:/Users/user/Desktop/DD_FIR_Lab11/DD_FIR\vivado.jou
+#-----------------------------------------------------------
+start_gui
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun May 12 16:13:44 2019...
