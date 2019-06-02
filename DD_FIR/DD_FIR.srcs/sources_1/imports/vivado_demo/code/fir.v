@@ -55,9 +55,9 @@ module fir(
 
 	multi mult_m(
 		.clk(clk),
-		.prod(prod), 
-		.coef(coef),		
-		.di(di)
+		.prod(prod), // out
+		.coef(coef),	// in_a
+		.di(di)	// in_b
 	); 
 	
 	accumulator acc_m(
