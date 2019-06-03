@@ -11,8 +11,8 @@ module fir(
 	wire [3:0] cidx;
 	wire [5:0]  didx1,didx2;
 	wire [15:0] coef, di, douta;
-	wire [31:0] prod;
-	wire [35:0] acc;
+	wire [15:0] prod;
+	wire [15:0] acc;
 	wire acc_en;
 	
 	sysctrl ctrl_m(
