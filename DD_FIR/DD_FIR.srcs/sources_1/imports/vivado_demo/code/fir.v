@@ -8,7 +8,7 @@ module fir(
 	output wire bsy
 );
 	wire RW1,RW2;
-	wire [3:0] cidx;
+	wire [13:0] cidx;
 	wire [5:0]  didx1,didx2;
 	wire [15:0] coef, di, douta;
 	wire [15:0] prod;

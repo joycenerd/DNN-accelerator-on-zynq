@@ -130,11 +130,11 @@ module sysctrl(
 	//cidx
 	always @(posedge clk or negedge rst)begin
 	    if(~rst) begin
-		    cidx<= 4'd0;
+		    cidx<= 13'd0;
 		end
-	    else if(counter[3] | ctrl[1]) begin
-		    cidx<= 4'd0;
-		end
+	    //else if(counter[3] | ctrl[1]) begin
+		  //  cidx<= 4'd0;
+		//end
 		else begin
 		    cidx<= cidx+1'b1;
 		end	
