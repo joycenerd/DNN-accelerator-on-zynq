@@ -18,8 +18,8 @@ module accumulator(
 	// Alignment
 	fadd_align alignment(prod,tmp_acc,prod_sign,prod_exp,prod_op_sub,prod_large_frac,prod_small_frac);
 
-	// Alignment
-	fadd_align alignment(prod,tmp_acc,prod_sign,prod_exp,prod_op_sub,prod_large_frac,prod_small_frac);
+	// Calculation
+	fadd_cal calculation (prod_op_sub,prod_large_frac,prod_small_frac,c_frac);
 
 	// Normalization
 	fadd_norm normalization (prod_sign,prod_exp,c_frac,tmp_out);
