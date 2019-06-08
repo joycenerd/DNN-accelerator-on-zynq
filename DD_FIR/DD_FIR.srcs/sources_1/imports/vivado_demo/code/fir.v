@@ -30,12 +30,6 @@ module fir(
 		.bsy(bsy)
 	);
 	
-	crom coef_m(
-		.clk(clk), 
-		.cidx(cidx), 
-		.coef(coef)
-	);
-	
 	dbuf buff_in(
 		.clk(clk), 
 		.din((bsy)?douta:din),
@@ -44,15 +38,6 @@ module fir(
 		.di(dout)
 	);
 	
-	dbuf buff_m(
-		.clk(clk), 
-		.din(dout),
-		.didx(didx1),
-		.RW(RW1),
-		.di(di)
-	);
-	
-
 	multi mult_m(
 		.clk(clk),
 		.prod(prod), // out
