@@ -1,2 +1,2 @@
 # DNN-accelerator-on-zynq
-Digital Design Lab Fall 2019 Final Project
+Digital Design Lab Spring 2019 Final Project
