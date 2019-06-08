@@ -36,6 +36,9 @@ class MyWindow : public QWidget
 
 public:
     explicit MyWindow(QWidget *parent = 0);
+    void Get754Value32(float v, int *sign, int *exp, float *mat);
+    void FIR_Accelerator(float A[], float &result);
+    void Set754Value32(float *f, int sign, int exp, float mat);
 
 protected:
 	void paintEvent(QPaintEvent*);
