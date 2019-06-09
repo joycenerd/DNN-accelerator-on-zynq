@@ -195,7 +195,7 @@ void MyWindow::SW_clicked() {
 }
 
 #if ACCELERATOR == 1
-void FIR_Accelerator(float A[], float result) {
+void FIR_Accelerator(float A[], float &result) {
   int i;
 
   volatile int fd =
@@ -331,18 +331,38 @@ bool MyWindow::accuracy() {
   }*/
 
   float A[3];
-  float tmp;
+  float tmp , mat , turnback;
+  int sign , exp;
   for (i = 0; i < NODE_LAYER_1; i++) {
     v_h1[i] = 0.0;
     for (j = 0; j < NODE_LAYER_0; j++) {
-      A[0] = inputf[j];
-      A[1] = w_h1[i][j];
+      sign = exp = mat = 0;
+      Get754Value32(inputf[j] , &sign , &exp , &mat);
+      A[0] = sign | exp | mat;
+
+      sign = exp = mat = 0;
+      Get754Value32( w_h1[i][j] , &sign , &exp , &mat);
+      A[1] = sign | exp | mat;
+
       A[2] = 1;
       FIR_Accelerator(A, tmp);
-      A[0] = v_h1[i];
-      A[1] = tmp;
+      turnback = 0.0f;
+      Set754Value32(&turnback, sign, exp, f_mat);
+      tmp = turnback;
+
+      sign = exp = mat = 0;
+      Get754Value32( v_h1[i] , &sign , &exp , &mat);
+      A[0] = sign | exp | mat;
+      
+      sign = exp = mat = 0;
+      Get754Value32( tmp , &sign , &exp , &mat);
+      A[1] = sign | exp | mat;
+
       A[2] = 2;
       FIR_Accelerator(A, v_h1[i]);
+      turnback = 0.0f;
+      Set754Value32(&turnback, sign, exp, f_mat);
+      v_h1[i] = turnback;
     }
   }
   for (i = 0; i < NODE_LAYER_1; i++) {
@@ -361,14 +381,33 @@ bool MyWindow::accuracy() {
   for (i = 0; i < NODE_LAYER_2; i++) {
     results[i] = 0.0;
     for (j = 0; j < NODE_LAYER_1; j++) {
-      A[0] = v_h1[j];
-      A[1] = w_o[i][j];
+      sign = exp = mat = 0;
+      Get754Value32(v_h1[j] , &sign , &exp , &mat);
+      A[0] = sign | exp | mat;
+
+      sign = exp = mat = 0;
+      Get754Value32(w_o[i][j] , &sign , &exp , &mat);
+      A[1] = sign | exp | mat;
+
       A[2] = 1;
       FIR_Accelerator(A, tmp);
-      A[0] = results[i];
-      A[1] = tmp;
+      turnback = 0.0f;
+      Set754Value32(&turnback, sign, exp, f_mat);
+      tmp = turnback;
+
+      sign = exp = mat = 0;
+      Get754Value32(result[i] , &sign , &exp , &mat);
+      A[0] = sign | exp | mat;
+      
+      sign = exp = mat = 0;
+      Get754Value32(tmp , &sign , &exp , &mat);
+      A[1] = sign | exp | mat;
+
       A[2] = 2;
       FIR_Accelerator(A, results[i]);
+      turnback = 0.0f;
+      Set754Value32(&turnback, sign, exp, f_mat);
+      results[i] = turnback;
     }
   }
   for (i = 0; i < NODE_LAYER_2; i++)
@@ -389,4 +428,65 @@ bool MyWindow::accuracy() {
   printf("Final ans:%d\n", max_idx);
   return true;
   //	painter.drawPixmap(220,100,QPixmap(".ppm"));
+}
+
+// float -> IEEE754
+void MyWindow::Get754Value32(float v, int *sign, int *exp, float *mat)
+{
+    float pwr = 0.5f;
+    uint value = *(uint *)&v;
+    int stop = 0;
+    *sign = (int)((value & FLT_SIGN_MASK) >> (FLT_MAT_BITS + FLT_EXP_BITS));
+    *sign <<= 15;
+    *exp = (int)((value & FLT_EXP_MASK) >> FLT_MAT_BITS) - FLT_BASE_VAL;
+    *exp <<= 14;
+
+    // calculate mantissa field
+    *mat = 1.0f, value <<= (FLT_SIGN_BITS + FLT_EXP_BITS);
+    while (value && stop < 10)
+    {
+        if (value & FLT_SIGN_MASK)
+        {
+            *mat += pwr;
+        }
+        else
+        pwr *= 0.5f;
+        value <<= 1;
+        stop++;
+    }
+
+}
+
+// IEEE754 -> float
+void MyWindows::Set754Value32(float *f, int sign, int exp, float mat)
+{
+    uint *pv = (uint *)f;
+    uint m = *(uint *)&mat;
+    uint mask = (1U << (23 - 1));
+
+    // error defect
+    exp += FLT_BASE_VAL;
+    if (exp < 0 || exp >= (1U << FLT_EXP_BITS))
+        return 0;
+    if (mat >= 2.0f || mat < 1.0f)
+        return 0;
+    *pv = 0U;
+
+    // set sign and exp
+    if (sign)
+        *pv |= FLT_SIGN_MASK;
+    *pv |= (exp << FLT_MAT_BITS);
+
+    // cal and set mantissa
+    mat -= 1.0f;
+    while (mask && mat != 0.0f)
+    {
+        if (mask & m)
+            *pv |= mask;
+        mat *= 2.0f;
+        if (mat > 1.0f)
+            mat -= 1.0f;
+        mask >>= 1;
+    }
+    return;
 }
