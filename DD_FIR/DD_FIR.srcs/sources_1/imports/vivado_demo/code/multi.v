@@ -1,8 +1,7 @@
 module multi(
-	input wire clk,
+    output reg [31:0] prod	// out
 	input wire [15:0] coef,	// in_a
 	input wire [15:0] di,	// in_b
-	output reg [31:0] prod	// out
 );
 
 	wire coef_sign,di_sign;

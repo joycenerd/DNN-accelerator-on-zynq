@@ -14,6 +14,8 @@ module fir(
 	wire [15:0] prod;
 	wire [15:0] acc;
 	wire acc_en;
+	wire [15:0] a,b,select;
+	wire fin;
 	
 	sysctrl ctrl_m(
 		.clk(clk), 
@@ -24,8 +26,8 @@ module fir(
 		.RW2(RW2),
 		.didx1(didx1),
 		.didx2(didx2),
-		.cidx(cidx),
-		.douta(douta),
+		//.cidx(cidx),
+		//.douta(douta),
 		.acc_en(acc_en),
 		.bsy(bsy)
 	);
@@ -35,21 +37,37 @@ module fir(
 		.din((bsy)?douta:din),
 		.didx((bsy)?didx2:addr[7:2]),
 		.RW(RW2),
-		.di(dout)
+		.di(dout),
+		.a(a),
+		.b(b),
+		.select(select),
+		.finish(fin)
 	);
+
+	always @(posedge clk or negedge rst) begin
+		if(fin==1'b1) begin
+			if(select[0]) begin
+				multi mult_m(dout,a,b);
+			end
+			else if(select[1]) begin 
+				accumulator acc_m(dout,a,b);
+			end
+		end
+	end
 	
-	multi mult_m(
+	
+	/*multi mult_m(
 		.clk(clk),
 		.prod(prod), // out
 		.coef(coef),	// in_a
 		.di(di)	// in_b
-	); 
+	);*/
 	
-	accumulator acc_m(
+	/*accumulator acc_m(
 		.clk(clk), 
 		.prod(prod),
 		.acc(acc),
 		.acc_en(acc_en)
-	);
+	);*/
 
 endmodule
