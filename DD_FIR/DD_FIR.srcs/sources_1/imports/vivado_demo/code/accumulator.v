@@ -1,6 +1,9 @@
-module fpadder (a,b,s); // fp adder
+`timescale 1ns/1ps
+
+module accumulator (a,b,sub,s); // fp adder
 
 	input[15:0] a, b;	// fp a and b
+	input sub;			// 1: sub; 0: add
 	output[15:0] s; 	// fp output
 	wire[15:0] tmp_out;
 
@@ -56,6 +59,7 @@ module fpadder (a,b,s); // fp adder
 	end
 
 endmodule
+
 
 	
     /*always @(posedge clk) begin
