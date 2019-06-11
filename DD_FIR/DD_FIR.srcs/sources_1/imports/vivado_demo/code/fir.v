@@ -50,7 +50,7 @@ module fir(
 				multi mult_m(dout,a,b);
 			end
 			else if(select[1]) begin 
-				accumulator acc_m(dout,a,b);
+				accumulator acc_m(a,b,0,dout);
 			end
 		end
 	end

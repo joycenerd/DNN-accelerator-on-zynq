@@ -1,7 +1,9 @@
+`timescale 1ns / 1ps
+
 /* Alignment */
 module fadd_align (a,b,sub,sign,temp_exp,op_sub,large_frac11,small_frac14);	
 	input[15:0] a, b;	// fp a and b
-    input sub;
+	input sub;			// add or sub
 	output sign;			// result sign
 	output[4:0] temp_exp;	// result exponent
 	output op_sub;			// fraction operation
@@ -22,6 +24,9 @@ module fadd_align (a,b,sub,sign,temp_exp,op_sub,large_frac11,small_frac14);
     // 儲存較大數的exponent
 	assign temp_exp = fp_large[14:10];
 
+    // 判斷結果值正負
+	assign sign = exchange ? sub^b[15] : a[15];
+
     // fraction運算使用加法或減法
 	assign op_sub = sub ^ fp_large[15] ^ fp_small[15];
 
@@ -36,4 +41,3 @@ module fadd_align (a,b,sub,sign,temp_exp,op_sub,large_frac11,small_frac14);
     // 留下11bit以及保護.循環位, 計算多出來的位數, 使用reduction OR簡化成1bit
 	assign small_frac14 = {small_frac25[23:11], |small_frac25[10:0]};
 endmodule
-

@@ -1,3 +1,5 @@
+`timescale 1ns / 1ps
+
 /* Calculation */
 module fadd_cal (op_sub,large_frac11,small_frac14,cal_frac);	
 	input op_sub;

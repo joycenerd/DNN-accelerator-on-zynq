@@ -1,99 +1,99 @@
-module multi(
-    output reg [31:0] prod	// out
-	input wire [15:0] coef,	// in_a
-	input wire [15:0] di,	// in_b
-);
+module multi(in_a,in_b,out);
 
-	wire coef_sign,di_sign;
-    wire[4:0] coef_exp,di_exp;
-    wire[10:0] coef_mantissa,di_mantissa;
+    input[15:0] in_a,in_b;
+    output[15:0] out;
 
-	reg prod_sign;
-    reg[4:0] prod_exp;
-    reg[10:0] prod_mantissa;
+    wire a_sign,b_sign;
+    wire[4:0] a_exp,b_exp;
+    wire[10:0] a_mantissa,b_mantissa;
 
-	reg[15:0] multi_coef,multi_di;
-    wire[15:0] multi_prod;
 
-	assign coef_sign=coef[15];
-    assign coef_exp[4:0]=coef[14:10];
-    assign coef_mantissa[10:0]={1'b1,coef[9:0]};
+    reg out_sign;
+    reg[4:0] out_exp;
+    reg[10:0] out_mantissa;
 
-	assign di_sign=di[15];
-    assign di_exp[4:0]=di[14:10];
-    assign di_mantissa[10:0]={1'b1,di[9:0]};
+    reg[15:0] multiplyin_a,multiplyin_b;
+    wire[15:0] multiply_out;
 
-	assign  prod[15] = prod_sign;
-	assign  prod[14:10] = prod_exp;				
-	assign  prod[9:0] = prod_mantissa[9:0];
+    assign a_sign=in_a[15];
+    assign a_exp[4:0]=in_a[14:10];
+    assign a_mantissa[10:0]={1'b1,in_a[9:0]};
 
-	multiplier16 mpy(multi_coef,multi_di,multi_prod);
+    assign b_sign=in_b[15];
+    assign b_exp[4:0]=in_b[14:10];
+    assign b_mantissa[10:0]={1'b1,in_b[9:0]};
 
-	always @ (*)
+    assign  out[15] = out_sign;
+	assign  out[14:10] = out_exp;				
+	assign  out[9:0] = out_mantissa[9:0];
+
+    multiplier16 mpy(multiplyin_a,multiplyin_b,multiply_out);
+
+    always @ (*)
     begin
-        // NaN * di = NaN, coef * NaN =NaN
+        // NaN * b = NaN, a * NaN =NaN
         // NaN= exp=255 and fraction!=0
-        if((coef_exp==31 && coef_mantissa[9:0]!=0) || (di_exp==31 && di_mantissa[9:0]!=0)) begin
-            prod_sign <= 1;
-            prod_exp <= 31;
-            prod_mantissa[9] <= 1;
-            prod_mantissa[8:0] <= 0;
+        if((a_exp==31 && a_mantissa[9:0]!=0) || (b_exp==31 && b_mantissa[9:0]!=0)) begin
+            out_sign <= 1;
+            out_exp <= 31;
+            out_mantissa[9] <= 1;
+            out_mantissa[8:0] <= 0;
         end
-	
-	// Inf=exp=255 and fraction=0
+
+        // Inf=exp=255 and fraction=0
         // Inf * 0 = NaN
-        else if(coef_exp==31) begin
-            if(di_exp==0 && di_mantissa[9:0]==0) begin
-                prod_sign <= 1;
-                prod_exp <= 31;
-                prod_mantissa[9] <=1;
-                prod_mantissa[8:0] <= 0;
+        else if(a_exp==31) begin
+            if(b_exp==0 && b_mantissa[9:0]==0) begin
+                out_sign <= 1;
+                out_exp <= 31;
+                out_mantissa[9] <=1;
+                out_mantissa[8:0] <= 0;
             end
-            // Inf * di = Inf
+            // Inf * b = Inf
             else begin
-                prod_sign <= coef_sign ^ di_sign;
-                prod_exp <= 31;
-                prod_mantissa <= 0;
+                out_sign <= a_sign ^ b_sign;
+                out_exp <= 31;
+                out_mantissa <= 0;
             end
         end
 
-		// 0 * Inf = NaN
-        else if(di_exp==31) begin
-            if(coef_exp==0 && coef_mantissa[9:0]==0) begin
-                prod_sign <= 1;
-                prod_exp <= 31;
-                prod_mantissa[9] <=1;
-                prod_mantissa[8:0] <= 0;
+        // 0 * Inf = NaN
+        else if(b_exp==31) begin
+            if(a_exp==0 && a_mantissa[9:0]==0) begin
+                out_sign <= 1;
+                out_exp <= 31;
+                out_mantissa[9] <=1;
+                out_mantissa[8:0] <= 0;
             end
-            // coef * Inf = Nan
+            // a * Inf = Nan
             else begin
-                prod_sign <= coef_sign ^ di_sign;
-                prod_exp <= 31;
-                prod_mantissa <= 0;
+                out_sign <= a_sign ^ b_sign;
+                out_exp <= 31;
+                out_mantissa <= 0;
             end
         end
 
-		// coef * 0 = 0
-        else if(di_exp==0 && di_mantissa[9:0]==0) begin
-            prod_sign <= 0;
-            prod_exp <= 0;
-            prod_mantissa <= 0;
+        // a * 0 = 0
+        else if(b_exp==0 && b_mantissa[9:0]==0) begin
+            out_sign <= 0;
+            out_exp <= 0;
+            out_mantissa <= 0;
         end
 
-        // 0 * di = 0
-        else if(coef_exp==0 && coef_mantissa[9:0]==0) begin
-            prod_sign <= 0;
-            prod_exp <= 0;
-            prod_mantissa <= 0;
+        // 0 * b = 0
+        else if(a_exp==0 && a_mantissa[9:0]==0) begin
+            out_sign <= 0;
+            out_exp <= 0;
+            out_mantissa <= 0;
         end
 
-		else begin
-            multi_coef <= coef;
-            multi_di <= di;
+        else begin
+            multiplyin_a <= in_a;
+            multiplyin_b <= in_b;
             //multiplier16 mpy(multiplyin_a[15:0],multiplyin_b[15:0],multiply_out[15:0]);
-            prod_sign=multi_prod[15];
-            prod_exp=multi_prod[14:10];
-            prod_mantissa=multi_prod[9:0];
+            out_sign=multiply_out[15];
+            out_exp=multiply_out[14:10];
+            out_mantissa=multiply_out[9:0];
         end		
 
     end

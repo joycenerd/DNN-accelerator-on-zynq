@@ -1,3 +1,5 @@
+`timescale 1ns / 1ps
+
 /* Normalization */
 module fadd_norm (sign,temp_exp,cal_frac,s);
 	input sign;		// result sign
@@ -51,6 +53,6 @@ module fadd_norm (sign,temp_exp,cal_frac,s);
 							exp0 + 5'h1 :
 							exp0;
 
-    assign s = {sign, exponent, frac_round[9:0]};
+	assign s = {sign, exponent, frac_round[9:0]};
 
 endmodule
