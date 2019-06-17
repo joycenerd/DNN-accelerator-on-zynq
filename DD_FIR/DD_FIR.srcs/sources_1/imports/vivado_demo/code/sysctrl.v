@@ -83,15 +83,15 @@ module sysctrl(
 		    counter<=counter+1'b1;
 		end
 	end*/
-	always @(posedge clk ro negedge rst) begin
+	always @(posedge clk or negedge rst) begin
 		if(~rst) begin
 			counter<=4'd0;
 		end
 		else if(ctrl[1]) begin
-			counter<=4'd0;
+			counter <= 4'd0;
 		end
 		else if(cnt_en) begin
-			counter<=counter+1'b1;
+			counter <= counter+1'b1;
 		end
 	end
 	

@@ -32,7 +32,7 @@ module fir(
 		.bsy(bsy)
 	);
 	
-	dbuf buff_in(
+	/*dbuf buff_in(
 		.clk(clk), 
 		.din((bsy)?douta:din),
 		.didx((bsy)?didx2:addr[7:2]),
@@ -42,18 +42,37 @@ module fir(
 		.b(b),
 		.select(select),
 		.finish(fin)
-	);
-
-	always @(posedge clk or negedge rst) begin
+	);*/
+	/*multi mult_m(
+					.in_a(a),
+					.in_b(b),
+					.out(dout)
+				);*/
+	accumulator acc_m(
+					.a(a),
+					.b(b),
+					.sub(0),
+					.s(dout)
+				);
+	/*always @(posedge clk or negedge rst) begin
 		if(fin==1'b1) begin
 			if(select[0]) begin
-				multi mult_m(dout,a,b);
+				multi mult_m(
+					.in_a(a),
+					.in_b(b),
+					.out(dout)
+				);
 			end
 			else if(select[1]) begin 
-				accumulator acc_m(a,b,0,dout);
+				accumulator acc_m(
+					.a(a),
+					.b(b),
+					.sub(0),
+					.s(dout)
+				);
 			end
 		end
-	end
+	end*/
 	
 	
 	/*multi mult_m(

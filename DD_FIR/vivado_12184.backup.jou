@@ -1,0 +1,17 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed Jun 12 17:15:04 2019
+# Process ID: 12184
+# Current directory: C:/Users/hp/Desktop/12/github/DNN-accelerator-on-zynq/DD_FIR
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12916 C:\Users\hp\Desktop\12\github\DNN-accelerator-on-zynq\DD_FIR\DD_FIR.xpr
+# Log file: C:/Users/hp/Desktop/12/github/DNN-accelerator-on-zynq/DD_FIR/vivado.log
+# Journal file: C:/Users/hp/Desktop/12/github/DNN-accelerator-on-zynq/DD_FIR\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/hp/Desktop/12/github/DNN-accelerator-on-zynq/DD_FIR/DD_FIR.xpr
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1

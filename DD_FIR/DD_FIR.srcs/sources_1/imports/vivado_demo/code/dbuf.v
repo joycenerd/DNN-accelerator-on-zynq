@@ -3,13 +3,15 @@ module dbuf(
 	input wire [15:0] din, //input
 	input wire [5:0] didx, //address
 	input wire RW,
-	output reg [15:0] di
+	output reg [15:0] di,
 	output reg[15:0] a,
 	output reg[15:0] b,
 	output reg[15:0] select,
-	output finish;
+	output finish
 );
 	reg [15:0] mem [0:63];
+	//reg finish_tmp;
+	//assign finish = finish_tmp;
 	// dbuf
 	always @(posedge clk) begin 
 		if(RW) begin
@@ -26,7 +28,7 @@ module dbuf(
 		end 
 		
 		di <= RW ? din:mem[didx];
-		finish<=(didx[2])?1:0;
+		//finish_tmp <= (didx[2])?1:0;
 
 	end
 

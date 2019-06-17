@@ -1,3 +1,4 @@
+//`timescale 1ns/1ps
 module multi(in_a,in_b,out);
 
     input[15:0] in_a,in_b;
@@ -12,7 +13,7 @@ module multi(in_a,in_b,out);
     reg[4:0] out_exp;
     reg[10:0] out_mantissa;
 
-    reg[15:0] multiplyin_a,multiplyin_b;
+    wire[15:0] multiplyin_a,multiplyin_b;
     wire[15:0] multiply_out;
 
     assign a_sign=in_a[15];
@@ -27,7 +28,9 @@ module multi(in_a,in_b,out);
 	assign  out[14:10] = out_exp;				
 	assign  out[9:0] = out_mantissa[9:0];
 
-    multiplier16 mpy(multiplyin_a,multiplyin_b,multiply_out);
+    assign multiplyin_a = in_a;
+    assign multiplyin_b = in_b;
+    //multiplier16 mpy(.in_a(multiplyin_a) , .in_b(multiplyin_b) , .out(multiply_out) );
 
     always @ (*)
     begin
@@ -37,7 +40,7 @@ module multi(in_a,in_b,out);
             out_sign <= 1;
             out_exp <= 31;
             out_mantissa[9] <= 1;
-            out_mantissa[8:0] <= 0;
+            out_mantissa[8:0] <= 9'd0;
         end
 
         // Inf=exp=255 and fraction=0
@@ -47,7 +50,7 @@ module multi(in_a,in_b,out);
                 out_sign <= 1;
                 out_exp <= 31;
                 out_mantissa[9] <=1;
-                out_mantissa[8:0] <= 0;
+                out_mantissa[8:0] <= 9'd0;
             end
             // Inf * b = Inf
             else begin
@@ -63,7 +66,7 @@ module multi(in_a,in_b,out);
                 out_sign <= 1;
                 out_exp <= 31;
                 out_mantissa[9] <=1;
-                out_mantissa[8:0] <= 0;
+                out_mantissa[8:0] <= 9'd0;
             end
             // a * Inf = Nan
             else begin
@@ -88,8 +91,8 @@ module multi(in_a,in_b,out);
         end
 
         else begin
-            multiplyin_a <= in_a;
-            multiplyin_b <= in_b;
+            //multiplyin_a <= in_a;
+            //multiplyin_b <= in_b;
             //multiplier16 mpy(multiplyin_a[15:0],multiplyin_b[15:0],multiply_out[15:0]);
             out_sign=multiply_out[15];
             out_exp=multiply_out[14:10];

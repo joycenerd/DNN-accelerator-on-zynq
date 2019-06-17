@@ -11,9 +11,9 @@ echo "Please update the PATH and LD_LIBRARY_PATH variables below, before executi
 exit
 
 if [ -z "$PATH" ]; then
-  PATH=D:/vivado/SDK/2018.3/bin;D:/vivado/Vivado/2018.3/ids_lite/ISE/bin/nt64;D:/vivado/Vivado/2018.3/ids_lite/ISE/lib/nt64:D:/vivado/Vivado/2018.3/bin
+  PATH=C:/Xilinx/SDK/2018.3/bin;C:/Xilinx/Vivado/2018.3/ids_lite/ISE/bin/nt64;C:/Xilinx/Vivado/2018.3/ids_lite/ISE/lib/nt64:C:/Xilinx/Vivado/2018.3/bin
 else
-  PATH=D:/vivado/SDK/2018.3/bin;D:/vivado/Vivado/2018.3/ids_lite/ISE/bin/nt64;D:/vivado/Vivado/2018.3/ids_lite/ISE/lib/nt64:D:/vivado/Vivado/2018.3/bin:$PATH
+  PATH=C:/Xilinx/SDK/2018.3/bin;C:/Xilinx/Vivado/2018.3/ids_lite/ISE/bin/nt64;C:/Xilinx/Vivado/2018.3/ids_lite/ISE/lib/nt64:C:/Xilinx/Vivado/2018.3/bin:$PATH
 fi
 export PATH
 
@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/tom85/Desktop/DD_FIR_Lab11/DD_FIR/DD_FIR.runs/impl_1'
+HD_PWD='C:/Users/hp/Desktop/12/github/DNN-accelerator-on-zynq/DD_FIR/DD_FIR.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
