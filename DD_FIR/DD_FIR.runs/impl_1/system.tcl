@@ -68,27 +68,27 @@ set rc [catch {
   create_project -in_memory -part xc7z020clg484-1
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
-  set_property webtalk.parent_dir C:/Users/tom85/Desktop/DD_FIR_Lab11/DD_FIR/DD_FIR.cache/wt [current_project]
-  set_property parent.project_path C:/Users/tom85/Desktop/DD_FIR_Lab11/DD_FIR/DD_FIR.xpr [current_project]
-  set_property ip_output_repo C:/Users/tom85/Desktop/DD_FIR_Lab11/DD_FIR/DD_FIR.cache/ip [current_project]
+  set_property webtalk.parent_dir C:/Users/hp/Desktop/12/github/DNN-accelerator-on-zynq/DD_FIR/DD_FIR.cache/wt [current_project]
+  set_property parent.project_path C:/Users/hp/Desktop/12/github/DNN-accelerator-on-zynq/DD_FIR/DD_FIR.xpr [current_project]
+  set_property ip_output_repo C:/Users/hp/Desktop/12/github/DNN-accelerator-on-zynq/DD_FIR/DD_FIR.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
-  add_files -quiet C:/Users/tom85/Desktop/DD_FIR_Lab11/DD_FIR/DD_FIR.runs/synth_1/system.dcp
-  read_edif C:/Users/tom85/Desktop/DD_FIR_Lab11/DD_FIR/DD_FIR.srcs/sources_1/imports/vivado_demo/imple/system_axi_ahblite_bridge_0_wrapper.ngc
-  read_edif C:/Users/tom85/Desktop/DD_FIR_Lab11/DD_FIR/DD_FIR.srcs/sources_1/imports/vivado_demo/imple/system_axi_clkgen_0_wrapper.ngc
-  read_edif C:/Users/tom85/Desktop/DD_FIR_Lab11/DD_FIR/DD_FIR.srcs/sources_1/imports/vivado_demo/imple/system_axi_dma_0_wrapper.ngc
-  read_edif C:/Users/tom85/Desktop/DD_FIR_Lab11/DD_FIR/DD_FIR.srcs/sources_1/imports/vivado_demo/imple/system_axi_hdmi_tx_16b_0_wrapper.ngc
-  read_edif C:/Users/tom85/Desktop/DD_FIR_Lab11/DD_FIR/DD_FIR.srcs/sources_1/imports/vivado_demo/imple/system_axi_iic_0_wrapper.ngc
-  read_edif C:/Users/tom85/Desktop/DD_FIR_Lab11/DD_FIR/DD_FIR.srcs/sources_1/imports/vivado_demo/imple/system_axi_interconnect_0_wrapper.ngc
-  read_edif C:/Users/tom85/Desktop/DD_FIR_Lab11/DD_FIR/DD_FIR.srcs/sources_1/imports/vivado_demo/imple/system_axi_interconnect_1_wrapper.ngc
-  read_edif C:/Users/tom85/Desktop/DD_FIR_Lab11/DD_FIR/DD_FIR.srcs/sources_1/imports/vivado_demo/imple/system_axi_interconnect_2_wrapper.ngc
-  read_edif C:/Users/tom85/Desktop/DD_FIR_Lab11/DD_FIR/DD_FIR.srcs/sources_1/imports/vivado_demo/imple/system_axi_interconnect_3_wrapper.ngc
-  read_edif C:/Users/tom85/Desktop/DD_FIR_Lab11/DD_FIR/DD_FIR.srcs/sources_1/imports/vivado_demo/imple/system_axi_spdif_tx_0_wrapper.ngc
-  read_edif C:/Users/tom85/Desktop/DD_FIR_Lab11/DD_FIR/DD_FIR.srcs/sources_1/imports/vivado_demo/imple/system_axi_vdma_0_wrapper.ngc
-  read_edif C:/Users/tom85/Desktop/DD_FIR_Lab11/DD_FIR/DD_FIR.srcs/sources_1/imports/vivado_demo/imple/system_clock_generator_0_wrapper.ngc
-  read_edif C:/Users/tom85/Desktop/DD_FIR_Lab11/DD_FIR/DD_FIR.srcs/sources_1/imports/vivado_demo/imple/system_processing_system7_0_wrapper.ngc
-  read_edif C:/Users/tom85/Desktop/DD_FIR_Lab11/DD_FIR/DD_FIR.srcs/sources_1/imports/vivado_demo/imple/system_util_vector_logic_0_wrapper.ngc
-  read_edif C:/Users/tom85/Desktop/DD_FIR_Lab11/DD_FIR/DD_FIR.srcs/sources_1/imports/vivado_demo/imple/system_vga_flyinglogo_0_wrapper.ngc
-  read_xdc C:/Users/tom85/Desktop/DD_FIR_Lab11/DD_FIR/DD_FIR.srcs/constrs_1/imports/project_1/system.xdc
+  add_files -quiet C:/Users/hp/Desktop/12/github/DNN-accelerator-on-zynq/DD_FIR/DD_FIR.runs/synth_1/system.dcp
+  read_edif C:/Users/hp/Desktop/12/github/DNN-accelerator-on-zynq/DD_FIR/DD_FIR.srcs/sources_1/imports/vivado_demo/imple/system_axi_ahblite_bridge_0_wrapper.ngc
+  read_edif C:/Users/hp/Desktop/12/github/DNN-accelerator-on-zynq/DD_FIR/DD_FIR.srcs/sources_1/imports/vivado_demo/imple/system_axi_clkgen_0_wrapper.ngc
+  read_edif C:/Users/hp/Desktop/12/github/DNN-accelerator-on-zynq/DD_FIR/DD_FIR.srcs/sources_1/imports/vivado_demo/imple/system_axi_dma_0_wrapper.ngc
+  read_edif C:/Users/hp/Desktop/12/github/DNN-accelerator-on-zynq/DD_FIR/DD_FIR.srcs/sources_1/imports/vivado_demo/imple/system_axi_hdmi_tx_16b_0_wrapper.ngc
+  read_edif C:/Users/hp/Desktop/12/github/DNN-accelerator-on-zynq/DD_FIR/DD_FIR.srcs/sources_1/imports/vivado_demo/imple/system_axi_iic_0_wrapper.ngc
+  read_edif C:/Users/hp/Desktop/12/github/DNN-accelerator-on-zynq/DD_FIR/DD_FIR.srcs/sources_1/imports/vivado_demo/imple/system_axi_interconnect_0_wrapper.ngc
+  read_edif C:/Users/hp/Desktop/12/github/DNN-accelerator-on-zynq/DD_FIR/DD_FIR.srcs/sources_1/imports/vivado_demo/imple/system_axi_interconnect_1_wrapper.ngc
+  read_edif C:/Users/hp/Desktop/12/github/DNN-accelerator-on-zynq/DD_FIR/DD_FIR.srcs/sources_1/imports/vivado_demo/imple/system_axi_interconnect_2_wrapper.ngc
+  read_edif C:/Users/hp/Desktop/12/github/DNN-accelerator-on-zynq/DD_FIR/DD_FIR.srcs/sources_1/imports/vivado_demo/imple/system_axi_interconnect_3_wrapper.ngc
+  read_edif C:/Users/hp/Desktop/12/github/DNN-accelerator-on-zynq/DD_FIR/DD_FIR.srcs/sources_1/imports/vivado_demo/imple/system_axi_spdif_tx_0_wrapper.ngc
+  read_edif C:/Users/hp/Desktop/12/github/DNN-accelerator-on-zynq/DD_FIR/DD_FIR.srcs/sources_1/imports/vivado_demo/imple/system_axi_vdma_0_wrapper.ngc
+  read_edif C:/Users/hp/Desktop/12/github/DNN-accelerator-on-zynq/DD_FIR/DD_FIR.srcs/sources_1/imports/vivado_demo/imple/system_clock_generator_0_wrapper.ngc
+  read_edif C:/Users/hp/Desktop/12/github/DNN-accelerator-on-zynq/DD_FIR/DD_FIR.srcs/sources_1/imports/vivado_demo/imple/system_processing_system7_0_wrapper.ngc
+  read_edif C:/Users/hp/Desktop/12/github/DNN-accelerator-on-zynq/DD_FIR/DD_FIR.srcs/sources_1/imports/vivado_demo/imple/system_util_vector_logic_0_wrapper.ngc
+  read_edif C:/Users/hp/Desktop/12/github/DNN-accelerator-on-zynq/DD_FIR/DD_FIR.srcs/sources_1/imports/vivado_demo/imple/system_vga_flyinglogo_0_wrapper.ngc
+  read_xdc C:/Users/hp/Desktop/12/github/DNN-accelerator-on-zynq/DD_FIR/DD_FIR.srcs/constrs_1/imports/project_1/system.xdc
   link_design -top system -part xc7z020clg484-1
   close_msg_db -file init_design.pb
 } RESULT]

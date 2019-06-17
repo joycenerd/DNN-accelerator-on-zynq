@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:C:/Users/tom85/Desktop/DD_FIR_Lab11/DD_FIR/DD_FIR.srcs/constrs_1/imports/project_1/system.xdc rfile:../../../DD_FIR.srcs/constrs_1/imports/project_1/system.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:C:/Users/hp/Desktop/12/github/DNN-accelerator-on-zynq/DD_FIR/DD_FIR.srcs/constrs_1/imports/project_1/system.xdc rfile:../../../DD_FIR.srcs/constrs_1/imports/project_1/system.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:6 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict { PACKAGE_PIN W18    IOSTANDARD LVCMOS33 } [get_ports { hdmi_clk }];
 set_property src_info {type:XDC file:1 line:7 export:INPUT save:INPUT read:READ} [current_design]

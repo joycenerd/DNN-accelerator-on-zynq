@@ -1,0 +1,1302 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri Jun 14 14:24:35 2019
+# Process ID: 2060
+# Current directory: C:/Users/hp/Desktop/12/github/DNN-accelerator-on-zynq/DD_FIR
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1988 C:\Users\hp\Desktop\12\github\DNN-accelerator-on-zynq\DD_FIR\DD_FIR.xpr
+# Log file: C:/Users/hp/Desktop/12/github/DNN-accelerator-on-zynq/DD_FIR/vivado.log
+# Journal file: C:/Users/hp/Desktop/12/github/DNN-accelerator-on-zynq/DD_FIR\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/hp/Desktop/12/github/DNN-accelerator-on-zynq/DD_FIR/DD_FIR.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:33 ; elapsed = 00:00:19 . Memory (MB): peak = 788.848 ; gain = 187.344
+update_compile_order -fileset sources_1
+reset_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Fri Jun 14 14:25:51 2019] Launched impl_1...
+Run output will be captured here: C:/Users/hp/Desktop/12/github/DNN-accelerator-on-zynq/DD_FIR/DD_FIR.runs/impl_1/runme.log
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7z020clg484-1
+Top: system
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 857.086 ; gain = 56.793
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'system' [C:/Users/hp/Desktop/12/github/DNN-accelerator-on-zynq/DD_FIR/DD_FIR.srcs/sources_1/imports/vivado_demo/code/system.v:8]
+INFO: [Synth 8-6157] synthesizing module 'system_vga_flyinglogo_0_wrapper' [C:/Users/hp/Desktop/12/github/DNN-accelerator-on-zynq/DD_FIR/DD_FIR.srcs/sources_1/imports/vivado_demo/code/system.v:3032]
+INFO: [Synth 8-6155] done synthesizing module 'system_vga_flyinglogo_0_wrapper' (1#1) [C:/Users/hp/Desktop/12/github/DNN-accelerator-on-zynq/DD_FIR/DD_FIR.srcs/sources_1/imports/vivado_demo/code/system.v:3032]
+INFO: [Synth 8-6157] synthesizing module 'system_util_vector_logic_0_wrapper' [C:/Users/hp/Desktop/12/github/DNN-accelerator-on-zynq/DD_FIR/DD_FIR.srcs/sources_1/imports/vivado_demo/code/system.v:3049]
+INFO: [Synth 8-6155] done synthesizing module 'system_util_vector_logic_0_wrapper' (2#1) [C:/Users/hp/Desktop/12/github/DNN-accelerator-on-zynq/DD_FIR/DD_FIR.srcs/sources_1/imports/vivado_demo/code/system.v:3049]
+INFO: [Synth 8-6157] synthesizing module 'system_processing_system7_0_wrapper' [C:/Users/hp/Desktop/12/github/DNN-accelerator-on-zynq/DD_FIR/DD_FIR.srcs/sources_1/imports/vivado_demo/code/system.v:3060]
+INFO: [Synth 8-6155] done synthesizing module 'system_processing_system7_0_wrapper' (3#1) [C:/Users/hp/Desktop/12/github/DNN-accelerator-on-zynq/DD_FIR/DD_FIR.srcs/sources_1/imports/vivado_demo/code/system.v:3060]
+INFO: [Synth 8-6157] synthesizing module 'system_clock_generator_0_wrapper' [C:/Users/hp/Desktop/12/github/DNN-accelerator-on-zynq/DD_FIR/DD_FIR.srcs/sources_1/imports/vivado_demo/code/system.v:4413]
+INFO: [Synth 8-6155] done synthesizing module 'system_clock_generator_0_wrapper' (4#1) [C:/Users/hp/Desktop/12/github/DNN-accelerator-on-zynq/DD_FIR/DD_FIR.srcs/sources_1/imports/vivado_demo/code/system.v:4413]
+INFO: [Synth 8-6157] synthesizing module 'system_axi_vdma_0_wrapper' [C:/Users/hp/Desktop/12/github/DNN-accelerator-on-zynq/DD_FIR/DD_FIR.srcs/sources_1/imports/vivado_demo/code/system.v:4468]
+INFO: [Synth 8-6155] done synthesizing module 'system_axi_vdma_0_wrapper' (5#1) [C:/Users/hp/Desktop/12/github/DNN-accelerator-on-zynq/DD_FIR/DD_FIR.srcs/sources_1/imports/vivado_demo/code/system.v:4468]
+INFO: [Synth 8-6157] synthesizing module 'system_axi_spdif_tx_0_wrapper' [C:/Users/hp/Desktop/12/github/DNN-accelerator-on-zynq/DD_FIR/DD_FIR.srcs/sources_1/imports/vivado_demo/code/system.v:4665]
+INFO: [Synth 8-6155] done synthesizing module 'system_axi_spdif_tx_0_wrapper' (6#1) [C:/Users/hp/Desktop/12/github/DNN-accelerator-on-zynq/DD_FIR/DD_FIR.srcs/sources_1/imports/vivado_demo/code/system.v:4665]
+INFO: [Synth 8-6157] synthesizing module 'system_axi_interconnect_3_wrapper' [C:/Users/hp/Desktop/12/github/DNN-accelerator-on-zynq/DD_FIR/DD_FIR.srcs/sources_1/imports/vivado_demo/code/system.v:4726]
+INFO: [Synth 8-6155] done synthesizing module 'system_axi_interconnect_3_wrapper' (7#1) [C:/Users/hp/Desktop/12/github/DNN-accelerator-on-zynq/DD_FIR/DD_FIR.srcs/sources_1/imports/vivado_demo/code/system.v:4726]
+INFO: [Synth 8-6157] synthesizing module 'system_axi_interconnect_2_wrapper' [C:/Users/hp/Desktop/12/github/DNN-accelerator-on-zynq/DD_FIR/DD_FIR.srcs/sources_1/imports/vivado_demo/code/system.v:5139]
+INFO: [Synth 8-6155] done synthesizing module 'system_axi_interconnect_2_wrapper' (8#1) [C:/Users/hp/Desktop/12/github/DNN-accelerator-on-zynq/DD_FIR/DD_FIR.srcs/sources_1/imports/vivado_demo/code/system.v:5139]
+INFO: [Synth 8-6157] synthesizing module 'system_axi_interconnect_1_wrapper' [C:/Users/hp/Desktop/12/github/DNN-accelerator-on-zynq/DD_FIR/DD_FIR.srcs/sources_1/imports/vivado_demo/code/system.v:5552]
+INFO: [Synth 8-6155] done synthesizing module 'system_axi_interconnect_1_wrapper' (9#1) [C:/Users/hp/Desktop/12/github/DNN-accelerator-on-zynq/DD_FIR/DD_FIR.srcs/sources_1/imports/vivado_demo/code/system.v:5552]
+INFO: [Synth 8-6157] synthesizing module 'system_axi_interconnect_0_wrapper' [C:/Users/hp/Desktop/12/github/DNN-accelerator-on-zynq/DD_FIR/DD_FIR.srcs/sources_1/imports/vivado_demo/code/system.v:5965]
+INFO: [Synth 8-6155] done synthesizing module 'system_axi_interconnect_0_wrapper' (10#1) [C:/Users/hp/Desktop/12/github/DNN-accelerator-on-zynq/DD_FIR/DD_FIR.srcs/sources_1/imports/vivado_demo/code/system.v:5965]
+INFO: [Synth 8-6157] synthesizing module 'system_axi_iic_0_wrapper' [C:/Users/hp/Desktop/12/github/DNN-accelerator-on-zynq/DD_FIR/DD_FIR.srcs/sources_1/imports/vivado_demo/code/system.v:6378]
+INFO: [Synth 8-6155] done synthesizing module 'system_axi_iic_0_wrapper' (11#1) [C:/Users/hp/Desktop/12/github/DNN-accelerator-on-zynq/DD_FIR/DD_FIR.srcs/sources_1/imports/vivado_demo/code/system.v:6378]
+INFO: [Synth 8-6157] synthesizing module 'system_axi_hdmi_tx_16b_0_wrapper' [C:/Users/hp/Desktop/12/github/DNN-accelerator-on-zynq/DD_FIR/DD_FIR.srcs/sources_1/imports/vivado_demo/code/system.v:6437]
+INFO: [Synth 8-6155] done synthesizing module 'system_axi_hdmi_tx_16b_0_wrapper' (12#1) [C:/Users/hp/Desktop/12/github/DNN-accelerator-on-zynq/DD_FIR/DD_FIR.srcs/sources_1/imports/vivado_demo/code/system.v:6437]
+INFO: [Synth 8-6157] synthesizing module 'system_axi_dma_0_wrapper' [C:/Users/hp/Desktop/12/github/DNN-accelerator-on-zynq/DD_FIR/DD_FIR.srcs/sources_1/imports/vivado_demo/code/system.v:6518]
+INFO: [Synth 8-6155] done synthesizing module 'system_axi_dma_0_wrapper' (13#1) [C:/Users/hp/Desktop/12/github/DNN-accelerator-on-zynq/DD_FIR/DD_FIR.srcs/sources_1/imports/vivado_demo/code/system.v:6518]
+INFO: [Synth 8-6157] synthesizing module 'system_axi_clkgen_0_wrapper' [C:/Users/hp/Desktop/12/github/DNN-accelerator-on-zynq/DD_FIR/DD_FIR.srcs/sources_1/imports/vivado_demo/code/system.v:6733]
+INFO: [Synth 8-6155] done synthesizing module 'system_axi_clkgen_0_wrapper' (14#1) [C:/Users/hp/Desktop/12/github/DNN-accelerator-on-zynq/DD_FIR/DD_FIR.srcs/sources_1/imports/vivado_demo/code/system.v:6733]
+INFO: [Synth 8-6157] synthesizing module 'system_axi_ahblite_bridge_0_wrapper' [C:/Users/hp/Desktop/12/github/DNN-accelerator-on-zynq/DD_FIR/DD_FIR.srcs/sources_1/imports/vivado_demo/code/system.v:6780]
+INFO: [Synth 8-6155] done synthesizing module 'system_axi_ahblite_bridge_0_wrapper' (15#1) [C:/Users/hp/Desktop/12/github/DNN-accelerator-on-zynq/DD_FIR/DD_FIR.srcs/sources_1/imports/vivado_demo/code/system.v:6780]
+INFO: [Synth 8-6157] synthesizing module 'IOBUF' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:23615]
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IOBUF' (16#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:23615]
+INFO: [Synth 8-6157] synthesizing module 'MYIP_TOP' [C:/Users/hp/Desktop/12/github/DNN-accelerator-on-zynq/DD_FIR/DD_FIR.srcs/sources_1/imports/vivado_demo/code/MYIP_TOP.v:2]
+	Parameter TRN_IDLE bound to: 2'b00 
+	Parameter TRN_BUSY bound to: 2'b01 
+	Parameter TRN_NONSEQ bound to: 2'b10 
+	Parameter TRN_SEQ bound to: 2'b11 
+	Parameter RSP_OKAY bound to: 2'b00 
+	Parameter RSP_ERROR bound to: 2'b01 
+	Parameter RSP_RETRY bound to: 2'b10 
+	Parameter RSP_SPLIT bound to: 2'b11 
+INFO: [Synth 8-6157] synthesizing module 'fir' [C:/Users/hp/Desktop/12/github/DNN-accelerator-on-zynq/DD_FIR/DD_FIR.srcs/sources_1/imports/vivado_demo/code/fir.v:1]
+INFO: [Synth 8-6157] synthesizing module 'sysctrl' [C:/Users/hp/Desktop/12/github/DNN-accelerator-on-zynq/DD_FIR/DD_FIR.srcs/sources_1/imports/vivado_demo/code/sysctrl.v:1]
+	Parameter Idle bound to: 0 - type: integer 
+	Parameter Calculate bound to: 1 - type: integer 
+	Parameter Depth bound to: 3 - type: integer 
+INFO: [Synth 8-226] default block is never used [C:/Users/hp/Desktop/12/github/DNN-accelerator-on-zynq/DD_FIR/DD_FIR.srcs/sources_1/imports/vivado_demo/code/sysctrl.v:22]
+INFO: [Synth 8-226] default block is never used [C:/Users/hp/Desktop/12/github/DNN-accelerator-on-zynq/DD_FIR/DD_FIR.srcs/sources_1/imports/vivado_demo/code/sysctrl.v:46]
+WARNING: [Synth 8-3848] Net CS in module/entity sysctrl does not have driver. [C:/Users/hp/Desktop/12/github/DNN-accelerator-on-zynq/DD_FIR/DD_FIR.srcs/sources_1/imports/vivado_demo/code/sysctrl.v:16]
+WARNING: [Synth 8-3848] Net didx1 in module/entity sysctrl does not have driver. [C:/Users/hp/Desktop/12/github/DNN-accelerator-on-zynq/DD_FIR/DD_FIR.srcs/sources_1/imports/vivado_demo/code/sysctrl.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'sysctrl' (17#1) [C:/Users/hp/Desktop/12/github/DNN-accelerator-on-zynq/DD_FIR/DD_FIR.srcs/sources_1/imports/vivado_demo/code/sysctrl.v:1]
+INFO: [Synth 8-6157] synthesizing module 'dbuf' [C:/Users/hp/Desktop/12/github/DNN-accelerator-on-zynq/DD_FIR/DD_FIR.srcs/sources_1/imports/vivado_demo/code/dbuf.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'dbuf' (18#1) [C:/Users/hp/Desktop/12/github/DNN-accelerator-on-zynq/DD_FIR/DD_FIR.srcs/sources_1/imports/vivado_demo/code/dbuf.v:1]
+INFO: [Synth 8-6157] synthesizing module 'multi' [C:/Users/hp/Desktop/12/github/DNN-accelerator-on-zynq/DD_FIR/DD_FIR.srcs/sources_1/imports/vivado_demo/code/multi.v:2]
+INFO: [Synth 8-6157] synthesizing module 'multiplier16' [C:/Users/hp/Desktop/12/github/DNN-accelerator-on-zynq/DD_FIR/DD_FIR.srcs/sources_1/imports/vivado_demo/code/multiplier16.v:1]
+WARNING: [Synth 8-3936] Found unconnected internal register 'product_reg' and it is trimmed from '22' to '21' bits. [C:/Users/hp/Desktop/12/github/DNN-accelerator-on-zynq/DD_FIR/DD_FIR.srcs/sources_1/imports/vivado_demo/code/multiplier16.v:27]
+INFO: [Synth 8-6155] done synthesizing module 'multiplier16' (19#1) [C:/Users/hp/Desktop/12/github/DNN-accelerator-on-zynq/DD_FIR/DD_FIR.srcs/sources_1/imports/vivado_demo/code/multiplier16.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'multi' (20#1) [C:/Users/hp/Desktop/12/github/DNN-accelerator-on-zynq/DD_FIR/DD_FIR.srcs/sources_1/imports/vivado_demo/code/multi.v:2]
+INFO: [Synth 8-6157] synthesizing module 'accumulator' [C:/Users/hp/Desktop/12/github/DNN-accelerator-on-zynq/DD_FIR/DD_FIR.srcs/sources_1/imports/vivado_demo/code/accumulator.v:3]
+INFO: [Synth 8-6157] synthesizing module 'fadd_align' [C:/Users/hp/Desktop/12/github/DNN-accelerator-on-zynq/DD_FIR/DD_FIR.srcs/sources_1/imports/vivado_demo/code/fp16_align.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'fadd_align' (21#1) [C:/Users/hp/Desktop/12/github/DNN-accelerator-on-zynq/DD_FIR/DD_FIR.srcs/sources_1/imports/vivado_demo/code/fp16_align.v:4]
+INFO: [Synth 8-6157] synthesizing module 'fadd_cal' [C:/Users/hp/Desktop/12/github/DNN-accelerator-on-zynq/DD_FIR/DD_FIR.srcs/sources_1/imports/vivado_demo/code/fp16_cal.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'fadd_cal' (22#1) [C:/Users/hp/Desktop/12/github/DNN-accelerator-on-zynq/DD_FIR/DD_FIR.srcs/sources_1/imports/vivado_demo/code/fp16_cal.v:4]
+INFO: [Synth 8-6157] synthesizing module 'fadd_norm' [C:/Users/hp/Desktop/12/github/DNN-accelerator-on-zynq/DD_FIR/DD_FIR.srcs/sources_1/imports/vivado_demo/code/fp16_norm.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'fadd_norm' (23#1) [C:/Users/hp/Desktop/12/github/DNN-accelerator-on-zynq/DD_FIR/DD_FIR.srcs/sources_1/imports/vivado_demo/code/fp16_norm.v:4]
+WARNING: [Synth 8-3848] Net a_frac in module/entity accumulator does not have driver. [C:/Users/hp/Desktop/12/github/DNN-accelerator-on-zynq/DD_FIR/DD_FIR.srcs/sources_1/imports/vivado_demo/code/accumulator.v:27]
+WARNING: [Synth 8-3848] Net b_exp in module/entity accumulator does not have driver. [C:/Users/hp/Desktop/12/github/DNN-accelerator-on-zynq/DD_FIR/DD_FIR.srcs/sources_1/imports/vivado_demo/code/accumulator.v:26]
+WARNING: [Synth 8-3848] Net b_frac in module/entity accumulator does not have driver. [C:/Users/hp/Desktop/12/github/DNN-accelerator-on-zynq/DD_FIR/DD_FIR.srcs/sources_1/imports/vivado_demo/code/accumulator.v:27]
+INFO: [Synth 8-6155] done synthesizing module 'accumulator' (24#1) [C:/Users/hp/Desktop/12/github/DNN-accelerator-on-zynq/DD_FIR/DD_FIR.srcs/sources_1/imports/vivado_demo/code/accumulator.v:3]
+WARNING: [Synth 8-3848] Net douta in module/entity fir does not have driver. [C:/Users/hp/Desktop/12/github/DNN-accelerator-on-zynq/DD_FIR/DD_FIR.srcs/sources_1/imports/vivado_demo/code/fir.v:13]
+WARNING: [Synth 8-3848] Net acc in module/entity fir does not have driver. [C:/Users/hp/Desktop/12/github/DNN-accelerator-on-zynq/DD_FIR/DD_FIR.srcs/sources_1/imports/vivado_demo/code/fir.v:15]
+INFO: [Synth 8-6155] done synthesizing module 'fir' (25#1) [C:/Users/hp/Desktop/12/github/DNN-accelerator-on-zynq/DD_FIR/DD_FIR.srcs/sources_1/imports/vivado_demo/code/fir.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'MYIP_TOP' (26#1) [C:/Users/hp/Desktop/12/github/DNN-accelerator-on-zynq/DD_FIR/DD_FIR.srcs/sources_1/imports/vivado_demo/code/MYIP_TOP.v:2]
+WARNING: [Synth 8-689] width (4) of port connection 'hsize' does not match port width (3) of module 'MYIP_TOP' [C:/Users/hp/Desktop/12/github/DNN-accelerator-on-zynq/DD_FIR/DD_FIR.srcs/sources_1/imports/vivado_demo/code/system.v:3018]
+WARNING: [Synth 8-689] width (1) of port connection 'hresp_es1' does not match port width (2) of module 'MYIP_TOP' [C:/Users/hp/Desktop/12/github/DNN-accelerator-on-zynq/DD_FIR/DD_FIR.srcs/sources_1/imports/vivado_demo/code/system.v:3026]
+INFO: [Synth 8-6155] done synthesizing module 'system' (27#1) [C:/Users/hp/Desktop/12/github/DNN-accelerator-on-zynq/DD_FIR/DD_FIR.srcs/sources_1/imports/vivado_demo/code/system.v:8]
+WARNING: [Synth 8-3331] design sysctrl has unconnected port didx1[5]
+WARNING: [Synth 8-3331] design sysctrl has unconnected port didx1[4]
+WARNING: [Synth 8-3331] design sysctrl has unconnected port didx1[3]
+WARNING: [Synth 8-3331] design sysctrl has unconnected port didx1[2]
+WARNING: [Synth 8-3331] design sysctrl has unconnected port didx1[1]
+WARNING: [Synth 8-3331] design sysctrl has unconnected port didx1[0]
+WARNING: [Synth 8-3331] design sysctrl has unconnected port ctrl[0]
+WARNING: [Synth 8-3331] design sysctrl has unconnected port acc[35]
+WARNING: [Synth 8-3331] design sysctrl has unconnected port acc[34]
+WARNING: [Synth 8-3331] design sysctrl has unconnected port acc[33]
+WARNING: [Synth 8-3331] design sysctrl has unconnected port acc[32]
+WARNING: [Synth 8-3331] design sysctrl has unconnected port acc[31]
+WARNING: [Synth 8-3331] design sysctrl has unconnected port acc[30]
+WARNING: [Synth 8-3331] design sysctrl has unconnected port acc[29]
+WARNING: [Synth 8-3331] design sysctrl has unconnected port acc[28]
+WARNING: [Synth 8-3331] design sysctrl has unconnected port acc[27]
+WARNING: [Synth 8-3331] design sysctrl has unconnected port acc[26]
+WARNING: [Synth 8-3331] design sysctrl has unconnected port acc[25]
+WARNING: [Synth 8-3331] design sysctrl has unconnected port acc[24]
+WARNING: [Synth 8-3331] design sysctrl has unconnected port acc[23]
+WARNING: [Synth 8-3331] design sysctrl has unconnected port acc[22]
+WARNING: [Synth 8-3331] design sysctrl has unconnected port acc[21]
+WARNING: [Synth 8-3331] design sysctrl has unconnected port acc[20]
+WARNING: [Synth 8-3331] design sysctrl has unconnected port acc[19]
+WARNING: [Synth 8-3331] design sysctrl has unconnected port acc[18]
+WARNING: [Synth 8-3331] design sysctrl has unconnected port acc[17]
+WARNING: [Synth 8-3331] design sysctrl has unconnected port acc[16]
+WARNING: [Synth 8-3331] design sysctrl has unconnected port acc[15]
+WARNING: [Synth 8-3331] design sysctrl has unconnected port acc[14]
+WARNING: [Synth 8-3331] design sysctrl has unconnected port acc[13]
+WARNING: [Synth 8-3331] design sysctrl has unconnected port acc[12]
+WARNING: [Synth 8-3331] design sysctrl has unconnected port acc[11]
+WARNING: [Synth 8-3331] design sysctrl has unconnected port acc[10]
+WARNING: [Synth 8-3331] design sysctrl has unconnected port acc[9]
+WARNING: [Synth 8-3331] design sysctrl has unconnected port acc[8]
+WARNING: [Synth 8-3331] design sysctrl has unconnected port acc[7]
+WARNING: [Synth 8-3331] design sysctrl has unconnected port acc[6]
+WARNING: [Synth 8-3331] design sysctrl has unconnected port acc[5]
+WARNING: [Synth 8-3331] design sysctrl has unconnected port acc[4]
+WARNING: [Synth 8-3331] design sysctrl has unconnected port acc[3]
+WARNING: [Synth 8-3331] design sysctrl has unconnected port acc[2]
+WARNING: [Synth 8-3331] design sysctrl has unconnected port acc[1]
+WARNING: [Synth 8-3331] design sysctrl has unconnected port acc[0]
+WARNING: [Synth 8-3331] design fir has unconnected port addr[15]
+WARNING: [Synth 8-3331] design fir has unconnected port addr[14]
+WARNING: [Synth 8-3331] design fir has unconnected port addr[13]
+WARNING: [Synth 8-3331] design fir has unconnected port addr[12]
+WARNING: [Synth 8-3331] design fir has unconnected port addr[11]
+WARNING: [Synth 8-3331] design fir has unconnected port addr[10]
+WARNING: [Synth 8-3331] design fir has unconnected port addr[9]
+WARNING: [Synth 8-3331] design fir has unconnected port addr[8]
+WARNING: [Synth 8-3331] design fir has unconnected port addr[1]
+WARNING: [Synth 8-3331] design fir has unconnected port addr[0]
+WARNING: [Synth 8-3331] design MYIP_TOP has unconnected port htrans[1]
+WARNING: [Synth 8-3331] design MYIP_TOP has unconnected port htrans[0]
+WARNING: [Synth 8-3331] design MYIP_TOP has unconnected port hsize[2]
+WARNING: [Synth 8-3331] design MYIP_TOP has unconnected port hsize[1]
+WARNING: [Synth 8-3331] design MYIP_TOP has unconnected port hsize[0]
+WARNING: [Synth 8-3331] design MYIP_TOP has unconnected port hburst[2]
+WARNING: [Synth 8-3331] design MYIP_TOP has unconnected port hburst[1]
+WARNING: [Synth 8-3331] design MYIP_TOP has unconnected port hburst[0]
+WARNING: [Synth 8-3331] design MYIP_TOP has unconnected port hwdata[31]
+WARNING: [Synth 8-3331] design MYIP_TOP has unconnected port hwdata[30]
+WARNING: [Synth 8-3331] design MYIP_TOP has unconnected port hwdata[29]
+WARNING: [Synth 8-3331] design MYIP_TOP has unconnected port hwdata[28]
+WARNING: [Synth 8-3331] design MYIP_TOP has unconnected port hwdata[27]
+WARNING: [Synth 8-3331] design MYIP_TOP has unconnected port hwdata[26]
+WARNING: [Synth 8-3331] design MYIP_TOP has unconnected port hwdata[25]
+WARNING: [Synth 8-3331] design MYIP_TOP has unconnected port hwdata[24]
+WARNING: [Synth 8-3331] design MYIP_TOP has unconnected port hwdata[23]
+WARNING: [Synth 8-3331] design MYIP_TOP has unconnected port hwdata[22]
+WARNING: [Synth 8-3331] design MYIP_TOP has unconnected port hwdata[21]
+WARNING: [Synth 8-3331] design MYIP_TOP has unconnected port hwdata[20]
+WARNING: [Synth 8-3331] design MYIP_TOP has unconnected port hwdata[19]
+WARNING: [Synth 8-3331] design MYIP_TOP has unconnected port hwdata[18]
+WARNING: [Synth 8-3331] design MYIP_TOP has unconnected port hwdata[17]
+WARNING: [Synth 8-3331] design MYIP_TOP has unconnected port hwdata[16]
+WARNING: [Synth 8-3331] design MYIP_TOP has unconnected port hrdata[31]
+WARNING: [Synth 8-3331] design MYIP_TOP has unconnected port hrdata[30]
+WARNING: [Synth 8-3331] design MYIP_TOP has unconnected port hrdata[29]
+WARNING: [Synth 8-3331] design MYIP_TOP has unconnected port hrdata[28]
+WARNING: [Synth 8-3331] design MYIP_TOP has unconnected port hrdata[27]
+WARNING: [Synth 8-3331] design MYIP_TOP has unconnected port hrdata[26]
+WARNING: [Synth 8-3331] design MYIP_TOP has unconnected port hrdata[25]
+WARNING: [Synth 8-3331] design MYIP_TOP has unconnected port hrdata[24]
+WARNING: [Synth 8-3331] design MYIP_TOP has unconnected port hrdata[23]
+WARNING: [Synth 8-3331] design MYIP_TOP has unconnected port hrdata[22]
+WARNING: [Synth 8-3331] design MYIP_TOP has unconnected port hrdata[21]
+WARNING: [Synth 8-3331] design MYIP_TOP has unconnected port hrdata[20]
+WARNING: [Synth 8-3331] design MYIP_TOP has unconnected port hrdata[19]
+WARNING: [Synth 8-3331] design MYIP_TOP has unconnected port hrdata[18]
+WARNING: [Synth 8-3331] design MYIP_TOP has unconnected port hrdata[17]
+WARNING: [Synth 8-3331] design MYIP_TOP has unconnected port hrdata[16]
+WARNING: [Synth 8-3331] design MYIP_TOP has unconnected port hrdata[15]
+WARNING: [Synth 8-3331] design MYIP_TOP has unconnected port hrdata[14]
+WARNING: [Synth 8-3331] design MYIP_TOP has unconnected port hrdata[13]
+WARNING: [Synth 8-3331] design MYIP_TOP has unconnected port hrdata[12]
+WARNING: [Synth 8-3331] design MYIP_TOP has unconnected port hrdata[11]
+WARNING: [Synth 8-3331] design MYIP_TOP has unconnected port hrdata[10]
+WARNING: [Synth 8-3331] design MYIP_TOP has unconnected port hrdata[9]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 915.324 ; gain = 115.031
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 915.324 ; gain = 115.031
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 915.324 ; gain = 115.031
+---------------------------------------------------------------------------------
+Release 14.7 - ngc2edif P_INT.20180726 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design system_vga_flyinglogo_0_wrapper.ngc ...
+WARNING:NetListWriters:298 - No output is written to
+   system_vga_flyinglogo_0_wrapper.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file system_vga_flyinglogo_0_wrapper.edif ...
+ngc2edif: Total memory usage is 4325620 kilobytes
+
+Reading core file 'C:/Users/hp/Desktop/12/github/DNN-accelerator-on-zynq/DD_FIR/DD_FIR.srcs/sources_1/imports/vivado_demo/imple/system_vga_flyinglogo_0_wrapper.ngc' for (cell view 'system_vga_flyinglogo_0_wrapper', library 'work')
+Parsing EDIF File [./.ngc2edfcache/system_vga_flyinglogo_0_wrapper_ngc_98fdbe1c.edif]
+Finished Parsing EDIF File [./.ngc2edfcache/system_vga_flyinglogo_0_wrapper_ngc_98fdbe1c.edif]
+Release 14.7 - ngc2edif P_INT.20180726 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design system_util_vector_logic_0_wrapper.ngc ...
+WARNING:NetListWriters:298 - No output is written to
+   system_util_vector_logic_0_wrapper.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file system_util_vector_logic_0_wrapper.edif ...
+ngc2edif: Total memory usage is 4324596 kilobytes
+
+Reading core file 'C:/Users/hp/Desktop/12/github/DNN-accelerator-on-zynq/DD_FIR/DD_FIR.srcs/sources_1/imports/vivado_demo/imple/system_util_vector_logic_0_wrapper.ngc' for (cell view 'system_util_vector_logic_0_wrapper', library 'work')
+Parsing EDIF File [./.ngc2edfcache/system_util_vector_logic_0_wrapper_ngc_98fdbe1c.edif]
+Finished Parsing EDIF File [./.ngc2edfcache/system_util_vector_logic_0_wrapper_ngc_98fdbe1c.edif]
+Release 14.7 - ngc2edif P_INT.20180726 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design system_processing_system7_0_wrapper.ngc ...
+WARNING:NetListWriters:298 - No output is written to
+   system_processing_system7_0_wrapper.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file system_processing_system7_0_wrapper.edif ...
+ngc2edif: Total memory usage is 4328692 kilobytes
+
+Reading core file 'C:/Users/hp/Desktop/12/github/DNN-accelerator-on-zynq/DD_FIR/DD_FIR.srcs/sources_1/imports/vivado_demo/imple/system_processing_system7_0_wrapper.ngc' for (cell view 'system_processing_system7_0_wrapper', library 'work')
+Parsing EDIF File [./.ngc2edfcache/system_processing_system7_0_wrapper_ngc_98fdbe1c.edif]
+Finished Parsing EDIF File [./.ngc2edfcache/system_processing_system7_0_wrapper_ngc_98fdbe1c.edif]
+Release 14.7 - ngc2edif P_INT.20180726 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design system_clock_generator_0_wrapper.ngc ...
+WARNING:NetListWriters:298 - No output is written to
+   system_clock_generator_0_wrapper.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file system_clock_generator_0_wrapper.edif ...
+ngc2edif: Total memory usage is 4324660 kilobytes
+
+Reading core file 'C:/Users/hp/Desktop/12/github/DNN-accelerator-on-zynq/DD_FIR/DD_FIR.srcs/sources_1/imports/vivado_demo/imple/system_clock_generator_0_wrapper.ngc' for (cell view 'system_clock_generator_0_wrapper', library 'work')
+Parsing EDIF File [./.ngc2edfcache/system_clock_generator_0_wrapper_ngc_98fdbe1c.edif]
+Finished Parsing EDIF File [./.ngc2edfcache/system_clock_generator_0_wrapper_ngc_98fdbe1c.edif]
+Release 14.7 - ngc2edif P_INT.20180726 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design system_axi_vdma_0_wrapper.ngc ...
+WARNING:NetListWriters:298 - No output is written to
+   system_axi_vdma_0_wrapper.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus
+   axi_vdma_0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/sig_cmd2mstr_c
+   ommand[67 : 0] on block system_axi_vdma_0_wrapper is not reconstructed,
+   because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_vdma_0/GEN_SPRT_FOR_MM2S.I_MM2S_DMA_MNGR/I_CMDSTS/s_axis_cmd_tdata[65 :
+   0] on block system_axi_vdma_0_wrapper is not reconstructed, because there are
+   some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_vdma_0/GEN_SPRT_FOR_MM2S.MM2S_REGISTER_MODULE_I/I_DMA_REGISTER/dmacr_i[6
+   : 0] on block system_axi_vdma_0_wrapper is not reconstructed, because there
+   are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_vdma_0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/I_RD_DATA_CNTL
+   /sig_cmd_fifo_data_out[35 : 0] on block system_axi_vdma_0_wrapper is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_vdma_0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/I_MSTR_PCC/sig
+   _xfer_end_strb_im2[6 : 1] on block system_axi_vdma_0_wrapper is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_vdma_0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/I_ADDR_CNTL/si
+   g_aq_fifo_data_out[50 : 4] on block system_axi_vdma_0_wrapper is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_vdma_0/GEN_SPRT_FOR_MM2S.I_MM2S_DMA_MNGR/VIDEO_GENLOCK_I/Msub_rvc_frame_r
+   ef_in_lut[2 : 0] on block system_axi_vdma_0_wrapper is not reconstructed,
+   because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_vdma_0/GEN_SPRT_FOR_MM2S.I_MM2S_DMA_MNGR/I_SM/cmnd_data[63 : 0] on block
+   system_axi_vdma_0_wrapper is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_vdma_0/GEN_SPRT_FOR_MM2S.I_MM2S_DMA_MNGR/I_CMDSTS/s_axis_cmd_tdata[71]_cm
+   nd_data[71]_mux_1_OUT[65 : 0] on block system_axi_vdma_0_wrapper is not
+   reconstructed, because there are some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file system_axi_vdma_0_wrapper.edif ...
+ngc2edif: Total memory usage is 4337908 kilobytes
+
+Reading core file 'C:/Users/hp/Desktop/12/github/DNN-accelerator-on-zynq/DD_FIR/DD_FIR.srcs/sources_1/imports/vivado_demo/imple/system_axi_vdma_0_wrapper.ngc' for (cell view 'system_axi_vdma_0_wrapper', library 'work')
+Parsing EDIF File [./.ngc2edfcache/system_axi_vdma_0_wrapper_ngc_98fdbe1c.edif]
+Finished Parsing EDIF File [./.ngc2edfcache/system_axi_vdma_0_wrapper_ngc_98fdbe1c.edif]
+Release 14.7 - ngc2edif P_INT.20180726 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design system_axi_spdif_tx_0_wrapper.ngc ...
+WARNING:NetListWriters:298 - No output is written to
+   system_axi_spdif_tx_0_wrapper.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus axi_spdif_tx_0/ipif_Bus2IP_WrCE[7 : 0]
+   on block system_axi_spdif_tx_0_wrapper is not reconstructed, because there
+   are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus axi_spdif_tx_0/ipif_Bus2IP_RdCE[7 : 0]
+   on block system_axi_spdif_tx_0_wrapper is not reconstructed, because there
+   are some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file system_axi_spdif_tx_0_wrapper.edif ...
+ngc2edif: Total memory usage is 4326644 kilobytes
+
+Reading core file 'C:/Users/hp/Desktop/12/github/DNN-accelerator-on-zynq/DD_FIR/DD_FIR.srcs/sources_1/imports/vivado_demo/imple/system_axi_spdif_tx_0_wrapper.ngc' for (cell view 'system_axi_spdif_tx_0_wrapper', library 'work')
+Parsing EDIF File [./.ngc2edfcache/system_axi_spdif_tx_0_wrapper_ngc_98fdbe1c.edif]
+Finished Parsing EDIF File [./.ngc2edfcache/system_axi_spdif_tx_0_wrapper_ngc_98fdbe1c.edif]
+Release 14.7 - ngc2edif P_INT.20180726 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design system_axi_interconnect_3_wrapper.ngc ...
+WARNING:NetListWriters:298 - No output is written to
+   system_axi_interconnect_3_wrapper.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file system_axi_interconnect_3_wrapper.edif ...
+ngc2edif: Total memory usage is 4325620 kilobytes
+
+Reading core file 'C:/Users/hp/Desktop/12/github/DNN-accelerator-on-zynq/DD_FIR/DD_FIR.srcs/sources_1/imports/vivado_demo/imple/system_axi_interconnect_3_wrapper.ngc' for (cell view 'system_axi_interconnect_3_wrapper', library 'work')
+Parsing EDIF File [./.ngc2edfcache/system_axi_interconnect_3_wrapper_ngc_98fdbe1c.edif]
+Finished Parsing EDIF File [./.ngc2edfcache/system_axi_interconnect_3_wrapper_ngc_98fdbe1c.edif]
+Release 14.7 - ngc2edif P_INT.20180726 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design system_axi_interconnect_2_wrapper.ngc ...
+WARNING:NetListWriters:298 - No output is written to
+   system_axi_interconnect_2_wrapper.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus
+   U0/xst_fifo_generator/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/rstblk/n
+   gwrdrst.grst.rd_rst_reg<2 : 0> on block
+   system_axi_interconnect_2_wrapper_fifo_generator_v9_1_3 is not reconstructed,
+   because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg<2 :
+   0> on block system_axi_interconnect_2_wrapper_fifo_generator_v9_1_2 is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg<2 :
+   0> on block system_axi_interconnect_2_wrapper_fifo_generator_v9_1_1_NO1 is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg<2 :
+   0> on block system_axi_interconnect_2_wrapper_fifo_generator_v9_1_1 is not
+   reconstructed, because there are some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file system_axi_interconnect_2_wrapper.edif ...
+ngc2edif: Total memory usage is 4329716 kilobytes
+
+Reading core file 'C:/Users/hp/Desktop/12/github/DNN-accelerator-on-zynq/DD_FIR/DD_FIR.srcs/sources_1/imports/vivado_demo/imple/system_axi_interconnect_2_wrapper.ngc' for (cell view 'system_axi_interconnect_2_wrapper', library 'work')
+Parsing EDIF File [./.ngc2edfcache/system_axi_interconnect_2_wrapper_ngc_98fdbe1c.edif]
+Finished Parsing EDIF File [./.ngc2edfcache/system_axi_interconnect_2_wrapper_ngc_98fdbe1c.edif]
+Release 14.7 - ngc2edif P_INT.20180726 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design system_axi_interconnect_1_wrapper.ngc ...
+WARNING:NetListWriters:298 - No output is written to
+   system_axi_interconnect_1_wrapper.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus
+   U0/xst_fifo_generator/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/rstblk/n
+   gwrdrst.grst.rd_rst_reg<2 : 0> on block
+   system_axi_interconnect_1_wrapper_fifo_generator_v9_1_3 is not reconstructed,
+   because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg<2 :
+   0> on block system_axi_interconnect_1_wrapper_fifo_generator_v9_1_2 is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg<2 :
+   0> on block system_axi_interconnect_1_wrapper_fifo_generator_v9_1_1_NO1 is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg<2 :
+   0> on block system_axi_interconnect_1_wrapper_fifo_generator_v9_1_1 is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_interconnect_1/crossbar_samd/gen_samd.crossbar_samd/gen_crossbar.addr_arb
+   iter_ar/m_mesg_i<62 : 0> on block system_axi_interconnect_1_wrapper is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_interconnect_1/crossbar_samd/gen_samd.crossbar_samd/gen_crossbar.addr_arb
+   iter_aw/m_mesg_i<62 : 1> on block system_axi_interconnect_1_wrapper is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_interconnect_1/si_converter_bank/gen_conv_slot[1].gen_upsizer.upsizer_ins
+   t/si_register_slice_inst/ar_pipe/storage_data1<61 : 0> on block
+   system_axi_interconnect_1_wrapper is not reconstructed, because there are
+   some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_interconnect_1/si_converter_bank/gen_conv_slot[0].gen_upsizer.upsizer_ins
+   t/si_register_slice_inst/ar_pipe/storage_data1<61 : 0> on block
+   system_axi_interconnect_1_wrapper is not reconstructed, because there are
+   some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_interconnect_1/si_converter_bank/gen_conv_slot[0].gen_upsizer.upsizer_ins
+   t/si_register_slice_inst/aw_pipe/storage_data1<61 : 0> on block
+   system_axi_interconnect_1_wrapper is not reconstructed, because there are
+   some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_interconnect_1/crossbar_samd/gen_samd.crossbar_samd/gen_crossbar.gen_slav
+   e_slots[0].gen_si_write.wdata_router_w/wrouter_aw_fifo/n0063<10 : 0> on block
+   system_axi_interconnect_1_wrapper is not reconstructed, because there are
+   some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_interconnect_1/crossbar_samd/gen_samd.crossbar_samd/gen_crossbar.gen_mast
+   er_slots[0].gen_mi_write.wdata_mux_w/gen_wmux.wmux_aw_fifo/n0053<10 : 0> on
+   block system_axi_interconnect_1_wrapper is not reconstructed, because there
+   are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_interconnect_1/crossbar_samd/gen_samd.crossbar_samd/gen_crossbar.addr_arb
+   iter_ar/m_mesg_mux<62 : 1> on block system_axi_interconnect_1_wrapper is not
+   reconstructed, because there are some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file system_axi_interconnect_1_wrapper.edif ...
+ngc2edif: Total memory usage is 4336884 kilobytes
+
+Reading core file 'C:/Users/hp/Desktop/12/github/DNN-accelerator-on-zynq/DD_FIR/DD_FIR.srcs/sources_1/imports/vivado_demo/imple/system_axi_interconnect_1_wrapper.ngc' for (cell view 'system_axi_interconnect_1_wrapper', library 'work')
+Parsing EDIF File [./.ngc2edfcache/system_axi_interconnect_1_wrapper_ngc_98fdbe1c.edif]
+Finished Parsing EDIF File [./.ngc2edfcache/system_axi_interconnect_1_wrapper_ngc_98fdbe1c.edif]
+Release 14.7 - ngc2edif P_INT.20180726 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design system_axi_interconnect_0_wrapper.ngc ...
+WARNING:NetListWriters:298 - No output is written to
+   system_axi_interconnect_0_wrapper.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus
+   axi_interconnect_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_a
+   rbiter_inst/m_amesg_i<65 : 0> on block system_axi_interconnect_0_wrapper is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus axi_interconnect_0/cb_mf_awvalid<5 : 2>
+   on block system_axi_interconnect_0_wrapper is not reconstructed, because
+   there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_interconnect_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_a
+   rbiter_inst/s_amesg<65 : 0> on block system_axi_interconnect_0_wrapper is not
+   reconstructed, because there are some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file system_axi_interconnect_0_wrapper.edif ...
+ngc2edif: Total memory usage is 4327668 kilobytes
+
+Reading core file 'C:/Users/hp/Desktop/12/github/DNN-accelerator-on-zynq/DD_FIR/DD_FIR.srcs/sources_1/imports/vivado_demo/imple/system_axi_interconnect_0_wrapper.ngc' for (cell view 'system_axi_interconnect_0_wrapper', library 'work')
+Parsing EDIF File [./.ngc2edfcache/system_axi_interconnect_0_wrapper_ngc_98fdbe1c.edif]
+Finished Parsing EDIF File [./.ngc2edfcache/system_axi_interconnect_0_wrapper_ngc_98fdbe1c.edif]
+Release 14.7 - ngc2edif P_INT.20180726 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design system_axi_iic_0_wrapper.ngc ...
+WARNING:NetListWriters:298 - No output is written to
+   system_axi_iic_0_wrapper.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus
+   axi_iic_0/X_IIC/X_AXI_IPIF_SSP1/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdat
+   a_i[31 : 0] on block system_axi_iic_0_wrapper is not reconstructed, because
+   there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus axi_iic_0/X_IIC/Bus2IIC_WrCE[8 : 0] on
+   block system_axi_iic_0_wrapper is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_iic_0/X_IIC/X_AXI_IPIF_SSP1/AXI_IP2Bus_Data[31 : 0] on block
+   system_axi_iic_0_wrapper is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_iic_0/X_IIC/X_AXI_IPIF_SSP1/AXI_Bus2IP_WrCE[16 : 10] on block
+   system_axi_iic_0_wrapper is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_iic_0/X_IIC/X_AXI_IPIF_SSP1/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/
+   cs_out_i[2 : 0] on block system_axi_iic_0_wrapper is not reconstructed,
+   because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_iic_0/X_IIC/X_AXI_IPIF_SSP1/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/
+   ce_expnd_i[34 : 7] on block system_axi_iic_0_wrapper is not reconstructed,
+   because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_iic_0/X_IIC/REG_INTERFACE_I/timing_param_thddat_i[9]_GND_62_o_mux_91_OUT[
+   8 : 0] on block system_axi_iic_0_wrapper is not reconstructed, because there
+   are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_iic_0/X_IIC/REG_INTERFACE_I/timing_param_thdsta_i[9]_GND_62_o_mux_71_OUT[
+   3 : 1] on block system_axi_iic_0_wrapper is not reconstructed, because there
+   are some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file system_axi_iic_0_wrapper.edif ...
+ngc2edif: Total memory usage is 4326708 kilobytes
+
+Reading core file 'C:/Users/hp/Desktop/12/github/DNN-accelerator-on-zynq/DD_FIR/DD_FIR.srcs/sources_1/imports/vivado_demo/imple/system_axi_iic_0_wrapper.ngc' for (cell view 'system_axi_iic_0_wrapper', library 'work')
+Parsing EDIF File [./.ngc2edfcache/system_axi_iic_0_wrapper_ngc_98fdbe1c.edif]
+Finished Parsing EDIF File [./.ngc2edfcache/system_axi_iic_0_wrapper_ngc_98fdbe1c.edif]
+Release 14.7 - ngc2edif P_INT.20180726 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design system_axi_hdmi_tx_16b_0_wrapper.ngc ...
+WARNING:NetListWriters:298 - No output is written to
+   system_axi_hdmi_tx_16b_0_wrapper.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus axi_hdmi_tx_16b_0/ipif_Bus2IP_WrCE<31 :
+   0> on block system_axi_hdmi_tx_16b_0_wrapper is not reconstructed, because
+   there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus axi_hdmi_tx_16b_0/ipif_Bus2IP_RdCE<31 :
+   2> on block system_axi_hdmi_tx_16b_0_wrapper is not reconstructed, because
+   there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/up_rwce_s<30 : 0> on block
+   system_axi_hdmi_tx_16b_0_wrapper is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Cr/i_mul_c2/d
+   ata_p<24 : 1> on block system_axi_hdmi_tx_16b_0_wrapper is not reconstructed,
+   because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Cr/i_mul_c3/d
+   ata_p<23 : 2> on block system_axi_hdmi_tx_16b_0_wrapper is not reconstructed,
+   because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Cb/i_mul_c1/d
+   ata_p<23 : 3> on block system_axi_hdmi_tx_16b_0_wrapper is not reconstructed,
+   because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Cb/i_mul_c2/d
+   ata_p<23 : 1> on block system_axi_hdmi_tx_16b_0_wrapper is not reconstructed,
+   because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Cr/i_mul_c1/p
+   2_data_p_0<23 : 0> on block system_axi_hdmi_tx_16b_0_wrapper is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Cr/i_mul_c1/p
+   1_data_p_0[23]_p1_data_p_4[23]_add_22_OUT<23 : 0> on block
+   system_axi_hdmi_tx_16b_0_wrapper is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Cr/i_mul_c1/p
+   2_data_p_0[23]_p2_data_p_1[23]_add_28_OUT<23 : 0> on block
+   system_axi_hdmi_tx_16b_0_wrapper is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Cr/i_mul_c1/p
+   1_data_p_2[23]_p1_data_p_3[23]_add_23_OUT<23 : 4> on block
+   system_axi_hdmi_tx_16b_0_wrapper is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Cr/i_mul_c1/d
+   ata_b[7]_GND_56_o_wide_mux_11_OUT<23 : 6> on block
+   system_axi_hdmi_tx_16b_0_wrapper is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Cr/i_mul_c1/d
+   ata_b[5]_GND_56_o_wide_mux_10_OUT<21 : 4> on block
+   system_axi_hdmi_tx_16b_0_wrapper is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Cr/i_mul_c1/d
+   ata_b[3]_GND_56_o_wide_mux_9_OUT<19 : 2> on block
+   system_axi_hdmi_tx_16b_0_wrapper is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Cr/i_mul_c1/d
+   ata_b[1]_p1_data_a_1n_s[23]_wide_mux_8_OUT<11 : 8> on block
+   system_axi_hdmi_tx_16b_0_wrapper is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Cr/i_mul_c1/p
+   2_data_p_1<23 : 4> on block system_axi_hdmi_tx_16b_0_wrapper is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Cr/i_mul_c2/p
+   2_data_p_0<23 : 1> on block system_axi_hdmi_tx_16b_0_wrapper is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Cr/i_mul_c2/p
+   1_data_p_2<21 : 5> on block system_axi_hdmi_tx_16b_0_wrapper is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Cr/i_mul_c2/p
+   1_data_p_0[23]_p1_data_p_4[23]_add_22_OUT<23 : 1> on block
+   system_axi_hdmi_tx_16b_0_wrapper is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Cr/i_mul_c2/p
+   2_data_p_0[23]_p2_data_p_1[23]_add_28_OUT<23 : 1> on block
+   system_axi_hdmi_tx_16b_0_wrapper is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Cr/i_mul_c2/p
+   1_data_p_2[23]_p1_data_p_3[23]_add_23_OUT<23 : 5> on block
+   system_axi_hdmi_tx_16b_0_wrapper is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Cr/i_mul_c2/d
+   ata_b[7]_GND_56_o_wide_mux_11_OUT<23 : 7> on block
+   system_axi_hdmi_tx_16b_0_wrapper is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Cr/i_mul_c2/d
+   ata_b[5]_GND_56_o_wide_mux_10_OUT<21 : 5> on block
+   system_axi_hdmi_tx_16b_0_wrapper is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Cr/i_mul_c2/d
+   ata_b[3]_GND_56_o_wide_mux_9_OUT<19 : 3> on block
+   system_axi_hdmi_tx_16b_0_wrapper is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Cr/i_mul_c2/d
+   ata_b[1]_p1_data_a_1n_s[23]_wide_mux_8_OUT<11 : 8> on block
+   system_axi_hdmi_tx_16b_0_wrapper is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Cr/i_mul_c2/p
+   2_data_p_1<23 : 5> on block system_axi_hdmi_tx_16b_0_wrapper is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Cr/i_mul_c2/p
+   1_data_p_3<23 : 7> on block system_axi_hdmi_tx_16b_0_wrapper is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Cr/i_mul_c2/p
+   1_data_p_1<19 : 3> on block system_axi_hdmi_tx_16b_0_wrapper is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Cr/i_mul_c3/p
+   2_data_p_0<23 : 2> on block system_axi_hdmi_tx_16b_0_wrapper is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Cr/i_mul_c3/p
+   1_data_p_2<21 : 6> on block system_axi_hdmi_tx_16b_0_wrapper is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Cr/i_mul_c3/p
+   1_data_p_0[23]_p1_data_p_4[23]_add_22_OUT<23 : 2> on block
+   system_axi_hdmi_tx_16b_0_wrapper is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Cr/i_mul_c3/p
+   2_data_p_0[23]_p2_data_p_1[23]_add_28_OUT<23 : 2> on block
+   system_axi_hdmi_tx_16b_0_wrapper is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Cr/i_mul_c3/p
+   1_data_p_2[23]_p1_data_p_3[23]_add_23_OUT<23 : 6> on block
+   system_axi_hdmi_tx_16b_0_wrapper is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Cr/i_mul_c3/d
+   ata_b[7]_GND_56_o_wide_mux_11_OUT<23 : 8> on block
+   system_axi_hdmi_tx_16b_0_wrapper is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Cr/i_mul_c3/d
+   ata_b[5]_GND_56_o_wide_mux_10_OUT<21 : 6> on block
+   system_axi_hdmi_tx_16b_0_wrapper is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Cr/i_mul_c3/d
+   ata_b[3]_GND_56_o_wide_mux_9_OUT<19 : 4> on block
+   system_axi_hdmi_tx_16b_0_wrapper is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Cr/i_mul_c3/p
+   2_data_p_1<23 : 6> on block system_axi_hdmi_tx_16b_0_wrapper is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Cr/i_mul_c3/p
+   1_data_p_3<23 : 8> on block system_axi_hdmi_tx_16b_0_wrapper is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Cr/i_mul_c3/p
+   1_data_p_1<19 : 4> on block system_axi_hdmi_tx_16b_0_wrapper is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Y/i_mul_c1/p2
+   _data_p_0<23 : 2> on block system_axi_hdmi_tx_16b_0_wrapper is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Y/i_mul_c1/p1
+   _data_p_0[23]_p1_data_p_4[23]_add_22_OUT<23 : 2> on block
+   system_axi_hdmi_tx_16b_0_wrapper is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Y/i_mul_c1/p2
+   _data_p_0[23]_p2_data_p_1[23]_add_28_OUT<23 : 2> on block
+   system_axi_hdmi_tx_16b_0_wrapper is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Y/i_mul_c1/p1
+   _data_p_2[23]_p1_data_p_3[23]_add_23_OUT<23 : 6> on block
+   system_axi_hdmi_tx_16b_0_wrapper is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Y/i_mul_c1/p2
+   _data_p_1<23 : 6> on block system_axi_hdmi_tx_16b_0_wrapper is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Y/i_mul_c2/p1
+   _data_p_0[23]_p1_data_p_4[23]_add_22_OUT<23 : 8> on block
+   system_axi_hdmi_tx_16b_0_wrapper is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Y/i_mul_c2/p2
+   _data_p_0[23]_p2_data_p_1[23]_add_28_OUT<23 : 8> on block
+   system_axi_hdmi_tx_16b_0_wrapper is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Y/i_mul_c2/p1
+   _data_p_2[23]_p1_data_p_3[23]_add_23_OUT<18 : 12> on block
+   system_axi_hdmi_tx_16b_0_wrapper is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Y/i_mul_c2/p2
+   _data_p_1<18 : 12> on block system_axi_hdmi_tx_16b_0_wrapper is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Y/i_mul_c2/p2
+   _data_p_0<23 : 8> on block system_axi_hdmi_tx_16b_0_wrapper is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Y/i_mul_c3/p2
+   _data_p_0<15 : 3> on block system_axi_hdmi_tx_16b_0_wrapper is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Y/i_mul_c3/p1
+   _data_p_0[23]_p1_data_p_4[23]_add_22_OUT<15 : 3> on block
+   system_axi_hdmi_tx_16b_0_wrapper is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Y/i_mul_c3/p2
+   _data_p_0[23]_p2_data_p_1[23]_add_28_OUT<23 : 3> on block
+   system_axi_hdmi_tx_16b_0_wrapper is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Y/i_mul_c3/p1
+   _data_p_2[23]_p1_data_p_3[23]_add_23_OUT<23 : 7> on block
+   system_axi_hdmi_tx_16b_0_wrapper is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Y/i_mul_c3/p2
+   _data_p_1<23 : 7> on block system_axi_hdmi_tx_16b_0_wrapper is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Cb/i_mul_c1/p
+   2_data_p_0<17 : 3> on block system_axi_hdmi_tx_16b_0_wrapper is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Cr/i_mul_c1/p
+   1_data_p_2<21 : 4> on block system_axi_hdmi_tx_16b_0_wrapper is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Cr/i_mul_c1/p
+   1_data_p_0<17 : 0> on block system_axi_hdmi_tx_16b_0_wrapper is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Cb/i_mul_c1/p
+   1_data_p_0[23]_p1_data_p_4[23]_add_22_OUT<17 : 3> on block
+   system_axi_hdmi_tx_16b_0_wrapper is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Cb/i_mul_c1/p
+   2_data_p_0[23]_p2_data_p_1[23]_add_28_OUT<23 : 3> on block
+   system_axi_hdmi_tx_16b_0_wrapper is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Cr/i_mul_c1/p
+   1_data_p_3<23 : 6> on block system_axi_hdmi_tx_16b_0_wrapper is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Cr/i_mul_c1/p
+   1_data_p_1<19 : 2> on block system_axi_hdmi_tx_16b_0_wrapper is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Cb/i_mul_c2/p
+   2_data_p_0<18 : 1> on block system_axi_hdmi_tx_16b_0_wrapper is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Cr/i_mul_c2/p
+   1_data_p_0<17 : 1> on block system_axi_hdmi_tx_16b_0_wrapper is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Cb/i_mul_c2/p
+   1_data_p_0[23]_p1_data_p_4[23]_add_22_OUT<18 : 1> on block
+   system_axi_hdmi_tx_16b_0_wrapper is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Cb/i_mul_c2/p
+   2_data_p_0[23]_p2_data_p_1[23]_add_28_OUT<23 : 1> on block
+   system_axi_hdmi_tx_16b_0_wrapper is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Cb/i_mul_c2/p
+   1_data_p_2[23]_p1_data_p_3[23]_add_23_OUT<17 : 5> on block
+   system_axi_hdmi_tx_16b_0_wrapper is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Cb/i_mul_c2/p
+   2_data_p_1<17 : 5> on block system_axi_hdmi_tx_16b_0_wrapper is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Cb/i_mul_c3/p
+   2_data_p_0<16 : 1> on block system_axi_hdmi_tx_16b_0_wrapper is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Cr/i_mul_c3/p
+   1_data_p_0<17 : 2> on block system_axi_hdmi_tx_16b_0_wrapper is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Cb/i_mul_c3/p
+   1_data_p_0[23]_p1_data_p_4[23]_add_22_OUT<16 : 1> on block
+   system_axi_hdmi_tx_16b_0_wrapper is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Cb/i_mul_c3/p
+   2_data_p_0[23]_p2_data_p_1[23]_add_28_OUT<23 : 1> on block
+   system_axi_hdmi_tx_16b_0_wrapper is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Cb/i_mul_c3/p
+   1_data_p_2[23]_p1_data_p_3[23]_add_23_OUT<18 : 5> on block
+   system_axi_hdmi_tx_16b_0_wrapper is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Cb/i_mul_c3/p
+   2_data_p_1<18 : 5> on block system_axi_hdmi_tx_16b_0_wrapper is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Cr/i_add_c4/p
+   2_data_0<24 : 0> on block system_axi_hdmi_tx_16b_0_wrapper is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Cr/i_add_c4/p
+   1_data_2<24 : 1> on block system_axi_hdmi_tx_16b_0_wrapper is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Cr/i_add_c4/p
+   1_data_1<23 : 0> on block system_axi_hdmi_tx_16b_0_wrapper is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Cr/i_add_c4/p
+   1_data_3<24 : 2> on block system_axi_hdmi_tx_16b_0_wrapper is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Cr/i_add_c4/p
+   1_data_3_n_s<24 : 2> on block system_axi_hdmi_tx_16b_0_wrapper is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Cr/i_add_c4/p
+   1_data_2_n_s<24 : 1> on block system_axi_hdmi_tx_16b_0_wrapper is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Cr/i_add_c4/p
+   2_data_0[24]_p2_data_1[24]_add_33_OUT<24 : 12> on block
+   system_axi_hdmi_tx_16b_0_wrapper is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Cr/i_add_c4/p
+   1_data_3[24]_p1_data_4[24]_add_28_OUT<24 : 2> on block
+   system_axi_hdmi_tx_16b_0_wrapper is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Cr/i_add_c4/p
+   1_data_1[24]_p1_data_2[24]_add_27_OUT<24 : 0> on block
+   system_axi_hdmi_tx_16b_0_wrapper is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Cr/i_add_c4/p
+   1_data_3_s<24 : 2> on block system_axi_hdmi_tx_16b_0_wrapper is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Cr/i_add_c4/p
+   1_data_2_s<24 : 1> on block system_axi_hdmi_tx_16b_0_wrapper is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Cr/i_add_c4/p
+   3_data<24 : 12> on block system_axi_hdmi_tx_16b_0_wrapper is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Cr/i_add_c4/p
+   2_data_1<24 : 2> on block system_axi_hdmi_tx_16b_0_wrapper is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Y/i_add_c4/p1
+   _data_1<23 : 2> on block system_axi_hdmi_tx_16b_0_wrapper is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Y/i_add_c4/p1
+   _data_3<23 : 1> on block system_axi_hdmi_tx_16b_0_wrapper is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Y/i_add_c4/p1
+   _data_3[24]_p1_data_4[24]_add_28_OUT<24 : 1> on block
+   system_axi_hdmi_tx_16b_0_wrapper is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Y/i_add_c4/p1
+   _data_1[24]_p1_data_2[24]_add_27_OUT<24 : 1> on block
+   system_axi_hdmi_tx_16b_0_wrapper is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Y/i_add_c4/p2
+   _data_1<24 : 1> on block system_axi_hdmi_tx_16b_0_wrapper is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Y/i_add_c4/p2
+   _data_0<24 : 1> on block system_axi_hdmi_tx_16b_0_wrapper is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Y/i_add_c4/p1
+   _data_2<23 : 5> on block system_axi_hdmi_tx_16b_0_wrapper is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Cb/i_add_c4/p
+   1_data_3<23 : 0> on block system_axi_hdmi_tx_16b_0_wrapper is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Cb/i_add_c4/p
+   1_data_2_n_s<24 : 1> on block system_axi_hdmi_tx_16b_0_wrapper is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Cb/i_add_c4/p
+   1_data_1_n_s<24 : 1> on block system_axi_hdmi_tx_16b_0_wrapper is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Cb/i_add_c4/p
+   1_data_3[24]_p1_data_4[24]_add_28_OUT<24 : 0> on block
+   system_axi_hdmi_tx_16b_0_wrapper is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Cb/i_add_c4/p
+   1_data_1[24]_p1_data_2[24]_add_27_OUT<24 : 0> on block
+   system_axi_hdmi_tx_16b_0_wrapper is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Cb/i_add_c4/p
+   1_data_2_s<24 : 1> on block system_axi_hdmi_tx_16b_0_wrapper is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Cb/i_add_c4/p
+   1_data_1_s<24 : 1> on block system_axi_hdmi_tx_16b_0_wrapper is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Cb/i_add_c4/p
+   2_data_1<24 : 0> on block system_axi_hdmi_tx_16b_0_wrapper is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Cb/i_add_c4/p
+   2_data_0<24 : 0> on block system_axi_hdmi_tx_16b_0_wrapper is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Cb/i_add_c4/p
+   1_data_2<24 : 1> on block system_axi_hdmi_tx_16b_0_wrapper is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Cb/i_add_c4/p
+   1_data_1<24 : 1> on block system_axi_hdmi_tx_16b_0_wrapper is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_ss/s444_data_2d<23 : 0>
+   on block system_axi_hdmi_tx_16b_0_wrapper is not reconstructed, because there
+   are some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file system_axi_hdmi_tx_16b_0_wrapper.edif ...
+ngc2edif: Total memory usage is 4335860 kilobytes
+
+Reading core file 'C:/Users/hp/Desktop/12/github/DNN-accelerator-on-zynq/DD_FIR/DD_FIR.srcs/sources_1/imports/vivado_demo/imple/system_axi_hdmi_tx_16b_0_wrapper.ngc' for (cell view 'system_axi_hdmi_tx_16b_0_wrapper', library 'work')
+Parsing EDIF File [./.ngc2edfcache/system_axi_hdmi_tx_16b_0_wrapper_ngc_98fdbe1c.edif]
+Finished Parsing EDIF File [./.ngc2edfcache/system_axi_hdmi_tx_16b_0_wrapper_ngc_98fdbe1c.edif]
+Release 14.7 - ngc2edif P_INT.20180726 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design system_axi_dma_0_wrapper.ngc ...
+WARNING:NetListWriters:298 - No output is written to
+   system_axi_dma_0_wrapper.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus
+   axi_dma_0/GEN_SG_ENGINE.I_SG_ENGINE/I_SG_AXI_DATAMOVER/GEN_S2MM_BASIC.I_S2MM_
+   BASIC_WRAPPER/I_S2MM_MMAP_SKID_BUF/sig_data_reg_out<31 : 0> on block
+   system_axi_dma_0_wrapper is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_dma_0/GEN_SG_ENGINE.I_SG_ENGINE/I_SG_AXI_DATAMOVER/GEN_MM2S_BASIC.I_MM2S_
+   BASIC_WRAPPER/I_ADDR_CNTL/sig_next_len_reg<4 : 2> on block
+   system_axi_dma_0_wrapper is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_dma_0/I_MM2S_DMA_MNGR/GEN_MM2S_DMA_CONTROL.I_MM2S_CMDSTS/s_axis_mm2s_cmd_
+   tdata<65 : 0> on block system_axi_dma_0_wrapper is not reconstructed, because
+   there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_dma_0/I_MM2S_DMA_MNGR/GEN_MM2S_DMA_CONTROL.GEN_SCATTER_GATHER_MODE.I_MM2S
+   _SG_IF/updt_desc_reg2<32 : 0> on block system_axi_dma_0_wrapper is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_dma_0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/I_CMD_STATUS/GE
+   N_INCLUDE_STATUS_FIFO.I_STS_FIFO/USE_SINGLE_REG.sig_regfifo_dout_reg<7 : 0>
+   on block system_axi_dma_0_wrapper is not reconstructed, because there are
+   some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_dma_0/I_AXI_DMA_REG_MODULE/GEN_MM2S_REGISTERS.I_MM2S_DMA_REGISTER/dmacr_i
+   <2 : 0> on block system_axi_dma_0_wrapper is not reconstructed, because there
+   are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_dma_0/GEN_SG_ENGINE.I_SG_ENGINE/GEN_DESC_UPDATE.I_SG_UPDATE_MNGR/I_UPDT_C
+   MDSTS_IF/s_axis_updt_cmd_tdata<63 : 2> on block system_axi_dma_0_wrapper is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_dma_0/GEN_SG_ENGINE.I_SG_ENGINE/s_axis_s2mm_tdata<31 : 0> on block
+   system_axi_dma_0_wrapper is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_dma_0/GEN_SG_ENGINE.I_SG_ENGINE/I_SG_FETCH_MNGR/I_FTCH_SG/ftch_cmnd_data<
+   63 : 5> on block system_axi_dma_0_wrapper is not reconstructed, because there
+   are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_dma_0/GEN_SG_ENGINE.I_SG_ENGINE/I_SG_FETCH_MNGR/I_FTCH_CMDSTS_IF/s_axis_f
+   tch_cmd_tdata<63 : 5> on block system_axi_dma_0_wrapper is not reconstructed,
+   because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_dma_0/GEN_SG_ENGINE.I_SG_ENGINE/I_SG_AXI_DATAMOVER/GEN_MM2S_BASIC.I_MM2S_
+   BASIC_WRAPPER/sig_mstr2addr_len<4 : 2> on block system_axi_dma_0_wrapper is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_dma_0/GEN_SG_ENGINE.I_SG_ENGINE/I_SG_AXI_DATAMOVER/GEN_MM2S_BASIC.I_MM2S_
+   BASIC_WRAPPER/I_CMD_STATUS/I_CMD_FIFO/USE_SINGLE_REG.sig_regfifo_dout_reg<63
+   : 5> on block system_axi_dma_0_wrapper is not reconstructed, because there
+   are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_dma_0/GEN_SG_ENGINE.I_SG_ENGINE/GEN_DESC_UPDATE.I_SG_UPDATE_MNGR/I_UPDT_S
+   G/updt_cmnd_data<37 : 2> on block system_axi_dma_0_wrapper is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_dma_0/I_AXI_DMA_REG_MODULE/GEN_AXI_LITE_IF.AXI_LITE_IF_I/axi2ip_wrdata<31
+   : 0> on block system_axi_dma_0_wrapper is not reconstructed, because there
+   are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_dma_0/I_AXI_DMA_REG_MODULE/GEN_AXI_LITE_IF.AXI_LITE_IF_I/axi2ip_wrce<4 :
+   0> on block system_axi_dma_0_wrapper is not reconstructed, because there are
+   some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_dma_0/I_AXI_DMA_REG_MODULE/GEN_AXI_LITE_IF.AXI_LITE_IF_I/wrce<4 : 0> on
+   block system_axi_dma_0_wrapper is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_dma_0/I_AXI_DMA_REG_MODULE/GEN_AXI_LITE_IF.AXI_LITE_IF_I/axi2ip_wrdata_i<
+   31 : 0> on block system_axi_dma_0_wrapper is not reconstructed, because there
+   are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_dma_0/I_AXI_DMA_REG_MODULE/GEN_AXI_LITE_IF.AXI_LITE_IF_I/wdata<31 : 0> on
+   block system_axi_dma_0_wrapper is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_dma_0/GEN_SG_ENGINE.I_SG_ENGINE/I_SG_AXI_DATAMOVER/GEN_S2MM_BASIC.I_S2MM_
+   BASIC_WRAPPER/I_S2MM_STRM_SKID_BUF/sig_data_skid_reg<31 : 0> on block
+   system_axi_dma_0_wrapper is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_dma_0/GEN_SG_ENGINE.I_SG_ENGINE/I_SG_AXI_DATAMOVER/GEN_S2MM_BASIC.I_S2MM_
+   BASIC_WRAPPER/I_S2MM_STRM_SKID_BUF/sig_data_skid_mux_out<31 : 0> on block
+   system_axi_dma_0_wrapper is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_dma_0/GEN_SG_ENGINE.I_SG_ENGINE/I_SG_AXI_DATAMOVER/GEN_S2MM_BASIC.I_S2MM_
+   BASIC_WRAPPER/I_S2MM_STRM_SKID_BUF/sig_data_reg_out<31 : 0> on block
+   system_axi_dma_0_wrapper is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_dma_0/GEN_SG_ENGINE.I_SG_ENGINE/I_SG_AXI_DATAMOVER/GEN_S2MM_BASIC.I_S2MM_
+   BASIC_WRAPPER/I_CMD_STATUS/I_CMD_FIFO/USE_SINGLE_REG.sig_regfifo_dout_reg<63
+   : 2> on block system_axi_dma_0_wrapper is not reconstructed, because there
+   are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_dma_0/GEN_SG_ENGINE.I_SG_ENGINE/I_SG_AXI_DATAMOVER/GEN_S2MM_BASIC.I_S2MM_
+   BASIC_WRAPPER/I_S2MM_MMAP_SKID_BUF/sig_data_skid_mux_out<31 : 0> on block
+   system_axi_dma_0_wrapper is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_dma_0/GEN_SG_ENGINE.I_SG_ENGINE/I_SG_AXI_DATAMOVER/GEN_S2MM_BASIC.I_S2MM_
+   BASIC_WRAPPER/I_S2MM_MMAP_SKID_BUF/sig_data_skid_reg<31 : 0> on block
+   system_axi_dma_0_wrapper is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_dma_0/GEN_SG_ENGINE.I_SG_ENGINE/I_SG_FETCH_MNGR/I_FTCH_CMDSTS_IF/s_axis_f
+   tch_cmd_tdata[71]_ftch_cmnd_data[71]_mux_1_OUT<63 : 5> on block
+   system_axi_dma_0_wrapper is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_dma_0/GEN_SG_ENGINE.I_SG_ENGINE/GEN_DESC_UPDATE.I_SG_UPDATE_MNGR/I_UPDT_S
+   G/Mmux_update_address[31]_ch1_updt_curdesc[31]_mux_22_OUT_rs_A<31 : 0> on
+   block system_axi_dma_0_wrapper is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_dma_0/GEN_SG_ENGINE.I_SG_ENGINE/GEN_DESC_UPDATE.I_SG_UPDATE_MNGR/I_UPDT_C
+   MDSTS_IF/s_axis_updt_cmd_tdata[71]_updt_cmnd_data[71]_mux_1_OUT<63 : 2> on
+   block system_axi_dma_0_wrapper is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_dma_0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/I_CMD_STATUS/I_
+   CMD_FIFO/USE_SINGLE_REG.sig_regfifo_dout_reg<63 : 0> on block
+   system_axi_dma_0_wrapper is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_dma_0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/I_RD_DATA_CNTL/
+   sig_cmd_fifo_data_out<26 : 0> on block system_axi_dma_0_wrapper is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_dma_0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/I_MSTR_PCC/sig_
+   xfer_end_strb_im2<3 : 1> on block system_axi_dma_0_wrapper is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_dma_0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/I_ADDR_CNTL/sig
+   _aq_fifo_data_out<50 : 4> on block system_axi_dma_0_wrapper is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_dma_0/I_MM2S_DMA_MNGR/GEN_MM2S_DMA_CONTROL.GEN_SCATTER_GATHER_MODE.I_MM2S
+   _SM/mm2s_cmnd_data<63 : 0> on block system_axi_dma_0_wrapper is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_dma_0/I_MM2S_DMA_MNGR/GEN_MM2S_DMA_CONTROL.GEN_SCATTER_GATHER_MODE.I_MM2S
+   _SG_IF/desc_reg6<27 : 0> on block system_axi_dma_0_wrapper is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_dma_0/I_MM2S_DMA_MNGR/GEN_MM2S_DMA_CONTROL.I_MM2S_CMDSTS/s_axis_mm2s_cmd_
+   tdata[71]_mm2s_cmnd_data[71]_mux_1_OUT<65 : 0> on block
+   system_axi_dma_0_wrapper is not reconstructed, because there are some missing
+   bus signals.
+  finished :Prep
+Writing EDIF netlist file system_axi_dma_0_wrapper.edif ...
+ngc2edif: Total memory usage is 4333812 kilobytes
+
+Reading core file 'C:/Users/hp/Desktop/12/github/DNN-accelerator-on-zynq/DD_FIR/DD_FIR.srcs/sources_1/imports/vivado_demo/imple/system_axi_dma_0_wrapper.ngc' for (cell view 'system_axi_dma_0_wrapper', library 'work')
+Parsing EDIF File [./.ngc2edfcache/system_axi_dma_0_wrapper_ngc_98fdbe1c.edif]
+Finished Parsing EDIF File [./.ngc2edfcache/system_axi_dma_0_wrapper_ngc_98fdbe1c.edif]
+Release 14.7 - ngc2edif P_INT.20180726 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design system_axi_clkgen_0_wrapper.ngc ...
+WARNING:NetListWriters:298 - No output is written to
+   system_axi_clkgen_0_wrapper.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus axi_clkgen_0/ipif_Bus2IP_WrCE<31 : 0> on
+   block system_axi_clkgen_0_wrapper is not reconstructed, because there are
+   some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus axi_clkgen_0/ipif_Bus2IP_RdCE<20 : 1> on
+   block system_axi_clkgen_0_wrapper is not reconstructed, because there are
+   some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus axi_clkgen_0/USER_LOGIC_I/up_rwce_s<27 :
+   0> on block system_axi_clkgen_0_wrapper is not reconstructed, because there
+   are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_clkgen_0/USER_LOGIC_I/i_clkgen/mmcm_rdata<15 : 0> on block
+   system_axi_clkgen_0_wrapper is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_clkgen_0/USER_LOGIC_I/i_clkgen/mmcm_rdata_s<15 : 0> on block
+   system_axi_clkgen_0_wrapper is not reconstructed, because there are some
+   missing bus signals.
+  finished :Prep
+Writing EDIF netlist file system_axi_clkgen_0_wrapper.edif ...
+ngc2edif: Total memory usage is 4326260 kilobytes
+
+Reading core file 'C:/Users/hp/Desktop/12/github/DNN-accelerator-on-zynq/DD_FIR/DD_FIR.srcs/sources_1/imports/vivado_demo/imple/system_axi_clkgen_0_wrapper.ngc' for (cell view 'system_axi_clkgen_0_wrapper', library 'work')
+Parsing EDIF File [./.ngc2edfcache/system_axi_clkgen_0_wrapper_ngc_98fdbe1c.edif]
+Finished Parsing EDIF File [./.ngc2edfcache/system_axi_clkgen_0_wrapper_ngc_98fdbe1c.edif]
+Release 14.7 - ngc2edif P_INT.20180726 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design system_axi_ahblite_bridge_0_wrapper.ngc ...
+WARNING:NetListWriters:298 - No output is written to
+   system_axi_ahblite_bridge_0_wrapper.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus
+   axi_ahblite_bridge_0/AXI_SLV_IF_MODULE/axi_cache<3 : 0> on block
+   system_axi_ahblite_bridge_0_wrapper is not reconstructed, because there are
+   some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_ahblite_bridge_0/AXI_SLV_IF_MODULE/axi_prot<2 : 0> on block
+   system_axi_ahblite_bridge_0_wrapper is not reconstructed, because there are
+   some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_ahblite_bridge_0/AXI_SLV_IF_MODULE/axi_cache[3]_S_AXI_AWCACHE[3]_mux_25_O
+   UT<3 : 0> on block system_axi_ahblite_bridge_0_wrapper is not reconstructed,
+   because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_ahblite_bridge_0/AXI_SLV_IF_MODULE/axi_prot[2]_S_AXI_AWPROT[2]_mux_21_OUT
+   <2 : 0> on block system_axi_ahblite_bridge_0_wrapper is not reconstructed,
+   because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_ahblite_bridge_0/AHB_MSTR_IF_MODULE/axi_length_burst<10 : 2> on block
+   system_axi_ahblite_bridge_0_wrapper is not reconstructed, because there are
+   some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file system_axi_ahblite_bridge_0_wrapper.edif ...
+ngc2edif: Total memory usage is 4325620 kilobytes
+
+Reading core file 'C:/Users/hp/Desktop/12/github/DNN-accelerator-on-zynq/DD_FIR/DD_FIR.srcs/sources_1/imports/vivado_demo/imple/system_axi_ahblite_bridge_0_wrapper.ngc' for (cell view 'system_axi_ahblite_bridge_0_wrapper', library 'work')
+Parsing EDIF File [./.ngc2edfcache/system_axi_ahblite_bridge_0_wrapper_ngc_98fdbe1c.edif]
+Finished Parsing EDIF File [./.ngc2edfcache/system_axi_ahblite_bridge_0_wrapper_ngc_98fdbe1c.edif]
+INFO: [Netlist 29-17] Analyzing 10573 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-479] Netlist was created with Xilinx ngc2edif P_INT.20180726
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 2 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 35 OBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/hp/Desktop/12/github/DNN-accelerator-on-zynq/DD_FIR/DD_FIR.srcs/constrs_1/imports/project_1/system.xdc]
+Finished Parsing XDC File [C:/Users/hp/Desktop/12/github/DNN-accelerator-on-zynq/DD_FIR/DD_FIR.srcs/constrs_1/imports/project_1/system.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1344.156 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 7630 instances were transformed.
+  (MUXCY,XORCY) => CARRY4: 554 instances
+  FD => FDRE: 1658 instances
+  FDC => FDCE: 372 instances
+  FDE => FDRE: 1785 instances
+  FDP => FDPE: 112 instances
+  FDR => FDRE: 2572 instances
+  FDS => FDSE: 60 instances
+  INV => LUT1: 392 instances
+  IOBUF => IOBUF (IBUF, OBUFT): 62 instances
+  LUT6_2 => LUT6_2 (LUT5, LUT6): 33 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 4 instances
+  RAM32X1D => RAM32X1D (RAMD32, RAMD32): 2 instances
+  RAM64M => RAM64M (RAMD64E, RAMD64E, RAMD64E, RAMD64E): 20 instances
+  RAM64X1D => RAM64X1D (RAMD64E, RAMD64E): 4 instances
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:46 ; elapsed = 00:01:04 . Memory (MB): peak = 1446.305 ; gain = 646.012
+66 Infos, 110 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:46 ; elapsed = 00:01:04 . Memory (MB): peak = 1446.305 ; gain = 646.012
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Jun 14 14:32:55 2019...

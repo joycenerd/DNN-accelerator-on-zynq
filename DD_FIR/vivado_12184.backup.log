@@ -1,0 +1,27 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed Jun 12 17:15:04 2019
+# Process ID: 12184
+# Current directory: C:/Users/hp/Desktop/12/github/DNN-accelerator-on-zynq/DD_FIR
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12916 C:\Users\hp\Desktop\12\github\DNN-accelerator-on-zynq\DD_FIR\DD_FIR.xpr
+# Log file: C:/Users/hp/Desktop/12/github/DNN-accelerator-on-zynq/DD_FIR/vivado.log
+# Journal file: C:/Users/hp/Desktop/12/github/DNN-accelerator-on-zynq/DD_FIR\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/hp/Desktop/12/github/DNN-accelerator-on-zynq/DD_FIR/DD_FIR.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/tom85/Desktop/DD_FIR_Lab11/DD_FIR' since last save.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/hp/Desktop/12/github/DNN-accelerator-on-zynq/DD_FIR/DD_FIR.srcs/sources_1/imports/vivado_demo/code/crom.v', nor could it be found using path 'C:/Users/tom85/Desktop/DD_FIR_Lab11/DD_FIR/DD_FIR.srcs/sources_1/imports/vivado_demo/code/crom.v'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:26 ; elapsed = 00:00:16 . Memory (MB): peak = 784.086 ; gain = 202.340
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Jun 12 18:39:34 2019...

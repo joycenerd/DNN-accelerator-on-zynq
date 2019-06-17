@@ -1,8 +1,8 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date             : Mon May 20 00:35:18 2019
-| Host             : DESKTOP-FM03GKQ running 64-bit major release  (build 9200)
+| Date             : Sun Jun 16 19:29:38 2019
+| Host             : LAPTOP-RG7T82MO running 64-bit major release  (build 9200)
 | Command          : report_power -file system_power_routed.rpt -pb system_power_summary_routed.pb -rpx system_power_routed.rpx
 | Design           : system
 | Device           : xc7z020clg484-1
@@ -29,20 +29,20 @@ Table of Contents
 1. Summary
 ----------
 
-+--------------------------+-----------------------------------+
-| Total On-Chip Power (W)  | 100.330 (Junction temp exceeded!) |
-| Design Power Budget (W)  | Unspecified*                      |
-| Power Budget Margin (W)  | NA                                |
-| Dynamic (W)              | 99.271                            |
-| Device Static (W)        | 1.059                             |
-| Effective TJA (C/W)      | 11.5                              |
-| Max Ambient (C)          | 0.0                               |
-| Junction Temperature (C) | 125.0                             |
-| Confidence Level         | Low                               |
-| Setting File             | ---                               |
-| Simulation Activity File | ---                               |
-| Design Nets Matched      | NA                                |
-+--------------------------+-----------------------------------+
++--------------------------+----------------------------------+
+| Total On-Chip Power (W)  | 97.758 (Junction temp exceeded!) |
+| Design Power Budget (W)  | Unspecified*                     |
+| Power Budget Margin (W)  | NA                               |
+| Dynamic (W)              | 96.702                           |
+| Device Static (W)        | 1.056                            |
+| Effective TJA (C/W)      | 11.5                             |
+| Max Ambient (C)          | 0.0                              |
+| Junction Temperature (C) | 125.0                            |
+| Confidence Level         | Low                              |
+| Setting File             | ---                              |
+| Simulation Activity File | ---                              |
+| Design Nets Matched      | NA                               |
++--------------------------+----------------------------------+
 * Specify Design Power Budget using, set_operating_conditions -design_power_budget <value in Watts>
 
 
@@ -52,22 +52,22 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
-| Slice Logic              |    19.415 |    20574 |       --- |             --- |
-|   LUT as Logic           |    14.729 |     8346 |     53200 |           15.69 |
-|   CARRY4                 |     1.907 |      549 |     13300 |            4.13 |
-|   Register               |     1.385 |     9889 |    106400 |            9.29 |
-|   LUT as Shift Register  |     1.310 |      384 |     17400 |            2.21 |
+| Slice Logic              |    18.577 |    20238 |       --- |             --- |
+|   LUT as Logic           |    14.006 |     8183 |     53200 |           15.38 |
+|   CARRY4                 |     1.852 |      541 |     13300 |            4.07 |
+|   Register               |     1.324 |     9738 |    106400 |            9.15 |
+|   LUT as Shift Register  |     1.310 |      385 |     17400 |            2.21 |
 |   BUFG                   |     0.041 |        7 |        32 |           21.88 |
 |   LUT as Distributed RAM |     0.033 |      108 |     17400 |            0.62 |
 |   F7/F8 Muxes            |     0.011 |      101 |     53200 |            0.19 |
-|   Others                 |    <0.001 |      802 |       --- |             --- |
-| Signals                  |    25.665 |    15365 |       --- |             --- |
-| Block RAM                |     0.967 |        9 |       140 |            6.43 |
+|   Others                 |    <0.001 |      790 |       --- |             --- |
+| Signals                  |    24.072 |    15065 |       --- |             --- |
+| Block RAM                |     0.828 |        8 |       140 |            5.71 |
 | MMCM                     |     2.936 |        2 |         4 |           50.00 |
 | I/O                      |    50.275 |       99 |       200 |           49.50 |
 | PS7                      |     0.000 |        1 |       --- |             --- |
-| Static Power             |     1.059 |          |           |                 |
-| Total                    |   100.317 |          |           |                 |
+| Static Power             |     1.056 |          |           |                 |
+| Total                    |    97.745 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -77,7 +77,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |    46.674 |      46.368 |      0.306 |
+| Vccint    |       1.000 |    44.113 |      43.808 |      0.305 |
 | Vccaux    |       1.800 |     3.533 |       3.433 |      0.100 |
 | Vcco33    |       3.300 |    14.147 |      14.146 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -86,7 +86,7 @@ Table of Contents
 | Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |
 | Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |
 | Vccaux_io |       1.800 |     0.000 |       0.000 |      0.000 |
-| Vccbram   |       1.000 |     0.079 |       0.043 |      0.037 |
+| Vccbram   |       1.000 |     0.069 |       0.033 |      0.036 |
 | MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |
 | MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |
 | MGTVccaux |       1.800 |     0.000 |       0.000 |      0.000 |
@@ -151,27 +151,20 @@ Table of Contents
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------+
 | Name                                                                                                                                                                                           | Power (W) |
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------+
-| system                                                                                                                                                                                         |    99.258 |
-|   MYIP_TOP_0                                                                                                                                                                                   |     2.200 |
-|     fir                                                                                                                                                                                        |     2.171 |
-|       acc_m                                                                                                                                                                                    |     0.148 |
-|       buff_in                                                                                                                                                                                  |     0.741 |
-|       buff_m                                                                                                                                                                                   |     0.582 |
-|       coef_m                                                                                                                                                                                   |     0.032 |
-|       ctrl_m                                                                                                                                                                                   |     0.373 |
-|       mult_m                                                                                                                                                                                   |     0.295 |
-|   axi_ahblite_bridge_0                                                                                                                                                                         |     0.705 |
-|   axi_clkgen_0                                                                                                                                                                                 |     2.674 |
-|   axi_dma_0                                                                                                                                                                                    |     2.008 |
-|     axi_dma_0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/I_SYNC_FIFOGEN_FIFO/V6_S6_AND_LATER.I_SYNC_FIFO_BRAM                                 |     0.271 |
-|   axi_hdmi_tx_16b_0                                                                                                                                                                            |    24.105 |
-|   axi_iic_0                                                                                                                                                                                    |     1.455 |
-|   axi_interconnect_0                                                                                                                                                                           |     1.035 |
-|   axi_interconnect_1                                                                                                                                                                           |     2.500 |
-|     axi_interconnect_1/mi_protocol_conv_bank/gen_protocol_slot[0].gen_prot_conv.conv_inst/gen_axi3.axi3_conv_inst/USE_READ.USE_SPLIT.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst |     0.058 |
-|     axi_interconnect_1/mi_protocol_conv_bank/gen_protocol_slot[0].gen_prot_conv.conv_inst/gen_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst            |     0.021 |
+| system                                                                                                                                                                                         |    96.689 |
+|   MYIP_TOP_0                                                                                                                                                                                   |     0.002 |
+|   axi_ahblite_bridge_0                                                                                                                                                                         |     0.559 |
+|   axi_clkgen_0                                                                                                                                                                                 |     2.686 |
+|   axi_dma_0                                                                                                                                                                                    |     1.961 |
+|     axi_dma_0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/I_SYNC_FIFOGEN_FIFO/V6_S6_AND_LATER.I_SYNC_FIFO_BRAM                                 |     0.257 |
+|   axi_hdmi_tx_16b_0                                                                                                                                                                            |    24.157 |
+|   axi_iic_0                                                                                                                                                                                    |     1.429 |
+|   axi_interconnect_0                                                                                                                                                                           |     1.027 |
+|   axi_interconnect_1                                                                                                                                                                           |     2.419 |
+|     axi_interconnect_1/mi_protocol_conv_bank/gen_protocol_slot[0].gen_prot_conv.conv_inst/gen_axi3.axi3_conv_inst/USE_READ.USE_SPLIT.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst |     0.066 |
+|     axi_interconnect_1/mi_protocol_conv_bank/gen_protocol_slot[0].gen_prot_conv.conv_inst/gen_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst            |     0.017 |
 |       U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM                                                                                                          |     0.002 |
-|     axi_interconnect_1/mi_protocol_conv_bank/gen_protocol_slot[0].gen_prot_conv.conv_inst/gen_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst       |     0.029 |
+|     axi_interconnect_1/mi_protocol_conv_bank/gen_protocol_slot[0].gen_prot_conv.conv_inst/gen_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst       |     0.030 |
 |     axi_interconnect_1/si_converter_bank/gen_conv_slot[0].gen_upsizer.upsizer_inst/USE_READ.read_data_inst/USE_FPGA_LENGTH.BIT_LANE[0].LUT6_2_inst                                             |     0.001 |
 |     axi_interconnect_1/si_converter_bank/gen_conv_slot[0].gen_upsizer.upsizer_inst/USE_READ.read_data_inst/USE_FPGA_LENGTH.BIT_LANE[1].LUT6_2_inst                                             |     0.001 |
 |     axi_interconnect_1/si_converter_bank/gen_conv_slot[0].gen_upsizer.upsizer_inst/USE_READ.read_data_inst/USE_FPGA_LENGTH.BIT_LANE[2].LUT6_2_inst                                             |     0.001 |
@@ -187,22 +180,22 @@ Table of Contents
 |     axi_interconnect_1/si_converter_bank/gen_conv_slot[1].gen_upsizer.upsizer_inst/USE_READ.read_data_inst/USE_FPGA_LENGTH.BIT_LANE[5].LUT6_2_inst                                             |     0.002 |
 |     axi_interconnect_1/si_converter_bank/gen_conv_slot[1].gen_upsizer.upsizer_inst/USE_READ.read_data_inst/USE_FPGA_LENGTH.BIT_LANE[6].LUT6_2_inst                                             |     0.002 |
 |     axi_interconnect_1/si_converter_bank/gen_conv_slot[1].gen_upsizer.upsizer_inst/USE_READ.read_data_inst/USE_FPGA_LENGTH.BIT_LANE[7].LUT6_2_inst                                             |     0.002 |
-|     axi_interconnect_1/si_data_fifo_bank/gen_fifo_slot[1].data_fifo_inst/gen_fifo.fifo_gen_inst                                                                                                |     0.750 |
-|       U0/xst_fifo_generator/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr                             |     0.369 |
-|   axi_interconnect_2                                                                                                                                                                           |     0.350 |
-|     axi_interconnect_2/mi_protocol_conv_bank/gen_protocol_slot[0].gen_prot_conv.conv_inst/gen_axi3.axi3_conv_inst/USE_READ.USE_SPLIT.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst |     0.052 |
+|     axi_interconnect_1/si_data_fifo_bank/gen_fifo_slot[1].data_fifo_inst/gen_fifo.fifo_gen_inst                                                                                                |     0.707 |
+|       U0/xst_fifo_generator/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr                             |     0.355 |
+|   axi_interconnect_2                                                                                                                                                                           |     0.363 |
+|     axi_interconnect_2/mi_protocol_conv_bank/gen_protocol_slot[0].gen_prot_conv.conv_inst/gen_axi3.axi3_conv_inst/USE_READ.USE_SPLIT.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst |     0.059 |
 |     axi_interconnect_2/mi_protocol_conv_bank/gen_protocol_slot[0].gen_prot_conv.conv_inst/gen_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst            |     0.009 |
-|     axi_interconnect_2/mi_protocol_conv_bank/gen_protocol_slot[0].gen_prot_conv.conv_inst/gen_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst       |     0.011 |
-|     axi_interconnect_2/si_data_fifo_bank/gen_fifo_slot[0].data_fifo_inst/gen_fifo.fifo_gen_inst                                                                                                |     0.190 |
-|       U0/xst_fifo_generator/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr                             |     0.106 |
-|   axi_interconnect_3                                                                                                                                                                           |     0.018 |
-|   axi_spdif_tx_0                                                                                                                                                                               |     0.306 |
+|     axi_interconnect_2/mi_protocol_conv_bank/gen_protocol_slot[0].gen_prot_conv.conv_inst/gen_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst       |     0.015 |
+|     axi_interconnect_2/si_data_fifo_bank/gen_fifo_slot[0].data_fifo_inst/gen_fifo.fifo_gen_inst                                                                                                |     0.192 |
+|       U0/xst_fifo_generator/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr                             |     0.105 |
+|   axi_interconnect_3                                                                                                                                                                           |     0.019 |
+|   axi_spdif_tx_0                                                                                                                                                                               |     0.274 |
 |     axi_spdif_tx_0/USER_LOGIC_I/Mram_audio_fifo1                                                                                                                                               |     0.002 |
 |     axi_spdif_tx_0/USER_LOGIC_I/Mram_audio_fifo10                                                                                                                                              |     0.002 |
 |     axi_spdif_tx_0/USER_LOGIC_I/Mram_audio_fifo11                                                                                                                                              |     0.002 |
 |     axi_spdif_tx_0/USER_LOGIC_I/Mram_audio_fifo12                                                                                                                                              |     0.002 |
 |     axi_spdif_tx_0/USER_LOGIC_I/Mram_audio_fifo13                                                                                                                                              |     0.002 |
-|     axi_spdif_tx_0/USER_LOGIC_I/Mram_audio_fifo14                                                                                                                                              |     0.002 |
+|     axi_spdif_tx_0/USER_LOGIC_I/Mram_audio_fifo14                                                                                                                                              |     0.003 |
 |     axi_spdif_tx_0/USER_LOGIC_I/Mram_audio_fifo15                                                                                                                                              |     0.002 |
 |     axi_spdif_tx_0/USER_LOGIC_I/Mram_audio_fifo16                                                                                                                                              |     0.002 |
 |     axi_spdif_tx_0/USER_LOGIC_I/Mram_audio_fifo17                                                                                                                                              |     0.002 |
@@ -221,19 +214,19 @@ Table of Contents
 |     axi_spdif_tx_0/USER_LOGIC_I/Mram_audio_fifo7                                                                                                                                               |     0.002 |
 |     axi_spdif_tx_0/USER_LOGIC_I/Mram_audio_fifo8                                                                                                                                               |     0.002 |
 |     axi_spdif_tx_0/USER_LOGIC_I/Mram_audio_fifo9                                                                                                                                               |     0.002 |
-|   axi_vdma_0                                                                                                                                                                                   |     4.111 |
-|     axi_vdma_0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUFFER.GEN_ASYNC_FIFO.I_LINEBUFFER_FIFO/I_ASYNC_FIFOGEN_FIFO/USE_2N_DEPTH.V6_S6_AND_LATER.I_ASYNC_FIFO_BRAM                         |     1.204 |
+|   axi_vdma_0                                                                                                                                                                                   |     4.068 |
+|     axi_vdma_0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUFFER.GEN_ASYNC_FIFO.I_LINEBUFFER_FIFO/I_ASYNC_FIFOGEN_FIFO/USE_2N_DEPTH.V6_S6_AND_LATER.I_ASYNC_FIFO_BRAM                         |     1.174 |
 |   clock_generator_0                                                                                                                                                                            |     1.345 |
 |   iobuf_10                                                                                                                                                                                     |     0.751 |
 |   iobuf_11                                                                                                                                                                                     |     0.751 |
 |   iobuf_12                                                                                                                                                                                     |     0.751 |
-|   iobuf_13                                                                                                                                                                                     |     0.752 |
+|   iobuf_13                                                                                                                                                                                     |     0.750 |
 |   iobuf_14                                                                                                                                                                                     |     0.750 |
 |   iobuf_15                                                                                                                                                                                     |     0.750 |
 |   iobuf_16                                                                                                                                                                                     |     0.750 |
 |   iobuf_17                                                                                                                                                                                     |     0.750 |
-|   iobuf_18                                                                                                                                                                                     |     0.749 |
-|   iobuf_19                                                                                                                                                                                     |     0.750 |
+|   iobuf_18                                                                                                                                                                                     |     0.748 |
+|   iobuf_19                                                                                                                                                                                     |     0.749 |
 |   iobuf_2                                                                                                                                                                                      |     0.752 |
 |   iobuf_20                                                                                                                                                                                     |     0.749 |
 |   iobuf_21                                                                                                                                                                                     |     0.748 |
@@ -241,15 +234,15 @@ Table of Contents
 |   iobuf_23                                                                                                                                                                                     |     0.749 |
 |   iobuf_24                                                                                                                                                                                     |     0.749 |
 |   iobuf_25                                                                                                                                                                                     |     0.748 |
-|   iobuf_26                                                                                                                                                                                     |     0.749 |
+|   iobuf_26                                                                                                                                                                                     |     0.750 |
 |   iobuf_27                                                                                                                                                                                     |     0.749 |
 |   iobuf_28                                                                                                                                                                                     |     0.750 |
 |   iobuf_29                                                                                                                                                                                     |     0.750 |
-|   iobuf_3                                                                                                                                                                                      |     0.753 |
+|   iobuf_3                                                                                                                                                                                      |     0.751 |
 |   iobuf_30                                                                                                                                                                                     |     0.750 |
 |   iobuf_31                                                                                                                                                                                     |     0.750 |
 |   iobuf_32                                                                                                                                                                                     |     0.750 |
-|   iobuf_33                                                                                                                                                                                     |     0.748 |
+|   iobuf_33                                                                                                                                                                                     |     0.749 |
 |   iobuf_34                                                                                                                                                                                     |     0.749 |
 |   iobuf_35                                                                                                                                                                                     |     0.749 |
 |   iobuf_36                                                                                                                                                                                     |     0.749 |
@@ -275,20 +268,20 @@ Table of Contents
 |   iobuf_54                                                                                                                                                                                     |     0.749 |
 |   iobuf_55                                                                                                                                                                                     |     0.747 |
 |   iobuf_56                                                                                                                                                                                     |     0.748 |
-|   iobuf_57                                                                                                                                                                                     |     0.748 |
+|   iobuf_57                                                                                                                                                                                     |     0.746 |
 |   iobuf_58                                                                                                                                                                                     |     0.748 |
-|   iobuf_59                                                                                                                                                                                     |     0.748 |
+|   iobuf_59                                                                                                                                                                                     |     0.747 |
 |   iobuf_6                                                                                                                                                                                      |     0.751 |
-|   iobuf_60                                                                                                                                                                                     |     0.747 |
+|   iobuf_60                                                                                                                                                                                     |     0.748 |
 |   iobuf_61                                                                                                                                                                                     |     0.745 |
 |   iobuf_7                                                                                                                                                                                      |     0.751 |
 |   iobuf_8                                                                                                                                                                                      |     0.752 |
 |   iobuf_9                                                                                                                                                                                      |     0.752 |
-|   processing_system7_0                                                                                                                                                                         |     4.367 |
-|   util_vector_logic_0                                                                                                                                                                          |     0.009 |
-|   vga_flyinglogo_0                                                                                                                                                                             |     0.795 |
-|     vga_flyinglogo_0/LOGO_BRAM_INST                                                                                                                                                            |     0.357 |
-|       U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr                                                                                                                        |     0.357 |
+|   processing_system7_0                                                                                                                                                                         |     4.315 |
+|   util_vector_logic_0                                                                                                                                                                          |     0.008 |
+|   vga_flyinglogo_0                                                                                                                                                                             |     0.783 |
+|     vga_flyinglogo_0/LOGO_BRAM_INST                                                                                                                                                            |     0.340 |
+|       U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr                                                                                                                        |     0.340 |
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------+
 
 
